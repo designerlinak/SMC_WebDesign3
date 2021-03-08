@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <style>
+        .jumbotron {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            font-family: 'Parisienne', cursive;
+            font-size: calc(1.375rem + 1.5vw);
+            font-weight: 600;
+        }
+
+        .h1, h1 {
+            font-size: calc(1.375rem + 5.5vw);
+        }
+
+        .lead {
+            font-size: calc(0.8rem + 0.5vw);
+            font-weight: 300;
+        }
+
+        .btn-dark {
+            color: #fff;
+            background-color: #000;
+            border: 0.2vw solid white;
+            margin-right: 0.3vw;
+        }
+
+        .btn-secondary {
+            color: #fff;
+            background-color: #aaaaaa;
+            border: 0.2vw solid white;
+        }
+
+        .container {
+            min-height: 460px;
+            padding: 20px 0 70px;
+        }
+
+        .featurette-heading {
+            font-family: graphik,Helvetica,Arial,sans-serif;
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
+
+        .row {
+            width: 100%;
+            max-width: 100%;
+            padding-right: calc(var(--bs-gutter-x)/ 2);
+            padding-left: calc(var(--bs-gutter-x)/ 2);
+            margin-top: var(--bs-gutter-y);
+            margin-left: 0rem;
+        }
+
+        .brand {
+            font-family: 'Parisienne', cursive;
+            font-size: 1.5rem;
+        }
+
+        .instagram {
+            margin-left: 2rem;
+        }
+
+        .navbar-brand {
+            padding-top: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.50rem;
+            text-decoration: none;
+            white-space: nowrap;
+            margin-top: 0.3rem;
+        }
+
+        .table-contain {
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 5rem;
+            vertical-align: top;
+        }
+
+        th {
+            font-size: 17px;
+        }
+
+        td {
+            font-size: 15px;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+    </style>
+
+    <title>Jumbotron, featurettes, lists and tables</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="py-5 text-xl-center container-fluid jumbotron" style="background-image: url('header.jpg');">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="header text-white">Dorrell's</h1>
+                    <p class="lead text-white">MON - FRI : 8:00 AM - 11:30 PM<br>SAT & SUN : 10:00 AM - 11:30 PM</p>
+                    <p>
+                        <a href="#" class="btn btn-dark my-2">Menu</a>
+                        <a href="#" class="btn btn-secondary my-2">Make a reservation</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading text-dark"><strong>DISCOVER COFFEE ROASTING</strong></h2>
+                    <p class="lead text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus blanditiis corporis vel voluptatibus nulla veritatis distinctio perferendis, numquam voluptate sit quas, impedit iure! Nobis vero veritatis repellat animi cumque?</p>
+                </div>
+                <div class="col-md-5">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="coffeeroasting.jpg">
+                        <source media="(min-width: 992px)" srcset="coffeeroasting500.jpg">
+                        <source media="(min-width: 768px)" srcset="coffeeroasting350.jpg">
+                        <img src="coffeeroasting520.jpg" alt="coffee roasting" class="img-fluid">
+                    </picture>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading text-dark"><strong>A GREATER COFFEE EXPERIENCE</strong></h2>
+                    <p class="lead text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae quidem magni eveniet, non voluptates earum! Hic unde magnam quaerat quia eveniet officia optio ratione, repudiandae dignissimos rerum accusamus vitae.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="icedcoffee.jpg">
+                        <source media="(min-width: 992px)" srcset="icedcoffee500.jpg">
+                        <source media="(min-width: 768px)" srcset="icedcoffee350.jpg">
+                        <img src="icedcoffee520.jpg" alt="iced coffee" class="img-fluid">
+                    </picture>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading text-dark"><strong>OUR FINCA LA MULA BREW RECIPE</strong></h2>
+                    <p class="lead text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consequatur corrupti enim ut nostrum ad, reprehenderit hic. Aperiam atque rem ad quos quam placeat dolore nam totam repellendus magnam! Esse!</p>
+                </div>
+                <div class="col-md-5">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="dripcoffee.jpg">
+                        <source media="(min-width: 992px)" srcset="dripcoffee500.jpg">
+                        <source media="(min-width: 768px)" srcset="dripcoffee350.jpg">
+                        <img src="dripcoffee520.jpg" alt="drip coffee" class="img-fluid">
+                    </picture>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+        </section>
+
+        <!-- Lists & Tables -->
+        <div class="table-contain one ms-lg-5 me-md-5 ms-sm-4 me-sm-2 mx-auto">
+            <h3><u>DRINKS</u></h3>
+            <table class="table table-dark table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Coffee</th>
+                        <th scope="col">Small (8 oz)</th>
+                        <th scope="col">Large (16 oz)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cold Brew</th>
+                        <td>3.00</td>
+                        <td>4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Drip Coffee</th>
+                        <td>4.00</td>
+                        <td>6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Americano</th>
+                        <td>4.00</td>
+                        <td>6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Vanilla Latte</th>
+                        <td>5.00</td>
+                        <td>7.50</td>
+                    </tr>
+                    <tr>
+                        <td>Hazelnut Latte</th>
+                        <td>5.00</td>
+                        <td>7.50</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3><u>BAKED GOODS</u></h3>
+            <table class="table table-dark table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Desserts</th>
+                        <th scope="col">Flavors</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Croissants</th>
+                        <td>Plain, Chcolate, Ham & Cheese, Fruit</td>
+                        <td>3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cinnamon Buns</th>
+                        <td>Cream Cheese, Caramel Pecan, Peach, Apple</td>
+                        <td>3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Muffins</th>
+                        <td>Blueberry, Orange Cranberry, Banana Nut</td>
+                        <td>3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Scone</th>
+                        <td>Cinnamon Crunch, Chocolate Chip, Apple Cinnamon</td>
+                        <td>3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cookies</th>
+                        <td>Chocolate Chip, Oatmeal Raisin, Dark Chocolate Chip</td>
+                        <td>2.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Navbar Bottom -->
+        <nav class="navbar fixed-bottom navbar-light" style="background-color: #000;">
+            <div class="container-fluid justify-content-start">
+                <a class="navbar-brand brand text-white" href="#">Dorrell's</a>
+                <button class="btn instagram" type="button"><a class="navbar-brand-logo" href="#">
+                    <img src="../homework/instagram.png" alt="Instagram" class="img-fluid"/></a>
+                </button>
+                <button class="btn" type="button"><a class="navbar-brand-logo" href="#">
+                  <img src="../homework/facebook.png" alt="Facebook" class="img-fluid"/></a>
+                </button>
+                <button class="btn" type="button"><a class="navbar-brand-logo" href="#">
+                  <img src="../homework/youtube.jpg" alt="Youtube" class="img-fluid"/></a>
+                </button>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

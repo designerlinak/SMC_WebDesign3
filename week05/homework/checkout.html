@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="../homework/checkout-styles.css">
+
+        <title>Checkout Page</title>
+    </head>
+
+    <body class="bg-light">
+        <main>
+            <div class="container">
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Shipping address</h4>
+                    <form action="" method="POST" class="form" id="form" novalidate>
+                        <fieldset>
+                        <div class="input-group row g-3">
+                            <div class="col-sm-6">
+                                <label for="txtfname" class="form-label">First name</label>
+                                <input type="text" class="form-control success" id="txtfname" name="txtfname" placeholder="" value="" required>
+                            </div>
+
+                            <div class="col-sm-6 error">
+                                <label for="txtlname" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="txtlname" name="txtlname" placeholder="" value="" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="txtaddress1" class="form-label">Address 1</label>
+                                <input type="text" class="form-control" id="txtaddress1" name="txtaddress1" placeholder="1234 Main St" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="txtaddress2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="txtaddress2" name="txtaddress2" placeholder="Apartment or suite">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="txtcountry" class="form-label">Country</label>
+                                <select class="form-select" id="txtcountry" name="txtcountry" required>
+                                    <option value="">Choose...</option>
+                                    <option selected>United States</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="txtstate" class="form-label">State</label>
+                                <select class="form-select" id="txtstate" name="txtstate" required>
+                                    <option value="">Choose...</option>
+                                    <option>Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>Arizona</option>
+                                    <option>Arkansas</option>
+                                    <option>California</option>
+                                    <option>Colorado</option>
+                                    <option>Connecticut</option>
+                                    <option>Delaware</option>
+                                    <option>Florida</option>
+                                    <option>Georgia</option>
+                                    <option>Idaho</option>
+                                    <option>Hawaii</option>
+                                    <option>Illinois</option>
+                                    <option>Indiana</option>
+                                    <option>Iowa</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="txtcity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="txtcity" name="txtcity" placeholder="" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="txtzip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="txtzip" name="txtzip" placeholder="" required>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" value="" class="form-check-input" id="check-address">
+                            <label class="form-check-label option" for="check-address">Billing address is same as my shipping address</label>
+                        </div>
+                        </fieldset>
+                    
+
+                    <h4 class="mb-3">Billing address</h4>
+                        <fieldset>
+                        <div class="input-group row g-3">
+                            <div class="col-sm-6">
+                                <label for="txtfname_billing" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="txtfname_billing" name="txtfname_billing" placeholder="" required>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="txtlname_billing" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="txtlname_billing" name="txtlname_billing" placeholder="" value="" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="txtaddress1_billing" class="form-label">Address 1</label>
+                                <input type="text" class="form-control" id="txtaddress1_billing" name="txtaddress1_billing" placeholder="1234 Main St" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="txtaddress2_billing" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="txtaddress2_billing" name="txtaddress2_billing" placeholder="Apartment or suite">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="txtcountry_billing" class="form-label">Country</label>
+                                <select class="form-select" id="txtcountry_billing" name="txtcountry_billing" required>
+                                    <option value="">Choose...</option>
+                                    <option selected>United States</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="txtstate_billing" class="form-label">State</label>
+                                <select class="form-select" id="txtstate_billing" name="txtstate_billing" required>
+                                    <option value="">Choose...</option>
+                                    <option>Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>Arizona</option>
+                                    <option>Arkansas</option>
+                                    <option>California</option>
+                                    <option>Colorado</option>
+                                    <option>Connecticut</option>
+                                    <option>Delaware</option>
+                                    <option>Florida</option>
+                                    <option>Georgia</option>
+                                    <option>Idaho</option>
+                                    <option>Hawaii</option>
+                                    <option>Illinois</option>
+                                    <option>Indiana</option>
+                                    <option>Iowa</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="txtcity_billing" class="form-label">City</label>
+                                <input type="text" class="form-control" id="txtcity_billing" name="txtcity_billing" placeholder="" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="txtzip_billing" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="txtzip_billing" name="txtzip_billing" placeholder="" required>
+                            </div>
+                        </div>
+                        </fieldset>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Payment</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Expiry date</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YY" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){ 
+                $('#check-address').click(function(){ 
+                if ($('#check-address').is(":checked")) {
+                $('#txtfname_billing').val($('#txtfname').val());
+                $('#txtlname_billing').val($('#txtlname').val());
+                $('#txtaddress1_billing').val($('#txtaddress1').val());
+                $('#txtaddress2_billing').val($('#txtaddress2').val());
+                $('#txtcountry_billing').val($('#txtcountry').val());
+                $('#txtstate_billing').val($('#txtstate').val());
+                $('#txtcity_billing').val($('#txtcity').val());
+                $('#txtzip_billing').val($('#txtzip').val());
+                var country = $('#country option:selected').val();
+                $('#country_billing option[value=' + country + ']').attr('selected','selected');
+                } else { //Clear on uncheck
+                $('#txtfname_billing').val("");
+                $('#txtlname_billing').val("");
+                $('#txtaddress1_billing').val("");
+                $('#txtaddress2_billing').val("");
+                $('#txtcountry_billing').val("");
+                $('#txtstate_billing').val("");
+                $('#txtcity_billing').val("");
+                $('#txtzip_billing').val("");
+                $('#country_billing option[value=""]').attr('selected','selected');
+                };
+                });
+            });
+        </script>
+
+        <script>
+            let fSinput = document.getElementById("txtfname");
+            let fBinput = document.getElementById("txtfname_billing");
+
+            fSinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    fSinput.value = this.value;
+                }
+                else {
+                    alert("Please provide your first name.");
+                }
+            })
+
+            fBinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    fBinput.value = this.value;
+                }
+                else {
+                    alert("Please provide your first name.");
+                }
+            })
+
+
+            let lSinput = document.getElementById("txtlname");
+            let lBinput = document.getElementById("txtlname_billing");
+
+            lSinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    lSinput.value = this.value;
+                }
+                else {
+                    alert("Please provide your last name.");
+                }
+            })
+
+            lBinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    lBinput.value = this.value;
+                }
+                else {
+                    alert("Please provide your last name.");
+                }
+            })
+
+
+            let aSinput = document.getElementById("txtaddress1");
+            let aBinput = document.getElementById("txtaddress1_billing");
+
+            aSinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    aSinput.value = this.value;
+                }
+                else {
+                    alert("Please provide your shipping address.");
+                }
+            })
+
+            aBinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    aBinput.value = this.value;
+                }
+                else {
+                    alert("Please provide your shipping address.");
+                }
+            })
+
+
+            let sSinput = document.getElementById("txtstate");
+            let sBinput = document.getElementById("txtstate_billing");
+
+            sSinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    sSinput.value = this.value;
+                }
+                else {
+                    alert("Please select a valid state.");
+                }
+            })
+
+            sBinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    sBinput.value = this.value;
+                }
+                else {
+                    alert("Please select a valid state.");
+                }
+            })
+
+
+            let cSinput = document.getElementById("txtcity");
+            let cBinput = document.getElementById("txtcity_billing");
+
+            cSinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    cSinput.value = this.value;
+                }
+                else {
+                    alert("Please provide a valid city.");
+                }
+            })
+
+            cBinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    cBinput.value = this.value;
+                }
+                else {
+                    alert("Please provide a valid city.");
+                }
+            })
+
+
+            let zSinput = document.getElementById("txtzip");
+            let zBinput = document.getElementById("txtzip_billing");
+
+            zSinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    zSinput.value = this.value;
+                }
+                else {
+                    alert("Zip code required.");
+                }
+            })
+
+            zBinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    zBinput.value = this.value;
+                }
+                else {
+                    alert("Zip code required.");
+                }
+            })
+
+
+            let cnaPinput = document.getElementById("cc-name");
+            let cnoPinput = document.getElementById("cc-number");
+            let cexPinput = document.getElementById("cc-expiration");
+            let ccvPinput = document.getElementById("cc-cvv");
+
+            cnaPinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    cnaPinput.value = this.value;
+                }
+                else {
+                    alert("Name on card is required.");
+                }
+            })
+
+            cnoPinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    cnoPinput.value = this.value;
+                }
+                else {
+                    alert("Credit card number is required.");
+                }
+            })
+
+            cexPinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    cexPinput.value = this.value;
+                }
+                else {
+                    alert("Expiry date required.");
+                }
+            })
+
+            ccvPinput.addEventListener("blur", function(){
+                if(this.value != ""){
+                    ccvPinput.value = this.value;
+                }
+                else {
+                    alert("Security code required.");
+                }
+            })
+        </script>
+    </body>
+</html>

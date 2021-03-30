@@ -1,0 +1,178 @@
+body {
+    background-color: #f3ebd2;
+}
+
+#menu-button {
+    margin-top: 0.2rem;
+    margin-left: -0.09rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: white;
+    margin-top: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(233, 233, 233);
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+.carousel-container {
+    position: relative;
+    padding: 1rem;
+}
+
+.d-block {
+    display: block!important;
+    border-radius: 0.5rem;
+    border: 0.2rem solid white;
+}
+
+.display-2 {
+    font-size: calc(1.325rem + 2vw);
+    position: absolute;
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    border-bottom: 0.5rem solid #8a6132;
+    padding-bottom: 0.2rem;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.45rem;
+    margin-right: 1.45rem;
+    margin-top: 6rem;
+}
+
+.mb-3 {
+    margin-bottom: 2rem!important;
+}
+
+.border-success1 {
+    border-top: 0.8rem solid #38AEE6;
+}
+
+.border-success2 {
+    border-top: 0.8rem solid #3FD7C5;
+}
+
+.border-success3 {
+    border-top: 0.8rem solid #B75CFF;
+}
+
+.display-6 {
+    font-size: calc(1.375rem + 0vw);
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.card-header {
+    padding: 0.8rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.display-3 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.para-1 {
+    font-size: 0.8rem;
+    margin-left: 8rem;
+    margin-top: -3rem;
+}
+
+.para-2 {
+    font-size: 0.8rem;
+    margin-left: 8rem;
+    margin-top: -3rem;
+}
+
+.para-3 {
+    font-size: 0.8rem;
+    margin-left: 8rem;
+    margin-top: -3rem;
+}
+
+.card-middle {
+    padding: .5rem 1rem;
+    border-top: 1px solid rgba(0,0,0,.125);
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+}
+
+.card-footer {
+    padding: .6rem 1rem;
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.btn-smp1 {
+    background-color: #38AEE6;
+    color: white;
+    text-align: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    width: 90%;
+}
+
+.btn-smp2 {
+    background-color: #3FD7C5;
+    color: white;
+    text-align: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    width: 90%;
+}
+
+.btn-smp3 {
+    background-color: #B75CFF;
+    color: white;
+    text-align: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    width: 90%;
+}
+
+.mark, mark {
+    padding: .2em;
+    background-color: #fffd92;
+}
+
+
+
+

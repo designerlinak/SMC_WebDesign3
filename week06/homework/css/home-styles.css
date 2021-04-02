@@ -7,26 +7,23 @@ body {
     margin-left: -0.09rem;
 }
 
+section {
+    background-image: url(../images/jumbotron-375px.jpeg);
+}
+
 .jumbotron {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    height: 84%;
+    height: 100%;
+    max-width: 100%;
 }
 
 .py-5 {
     padding-top: 7rem!important;
     padding-bottom: 20rem!important;
-}
-
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-    color: black;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: black;
 }
 
 .navbar-collapse {
@@ -41,12 +38,16 @@ body {
     border-radius: 2rem;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-light .navbar-toggler {
     color: rgb(233, 233, 233);
     border-radius: 2rem;
     width: 4rem;
     height: 4rem;
     background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
 }
 
 button, input, optgroup, select, textarea {
@@ -67,21 +68,22 @@ button, input, optgroup, select, textarea {
 
 .h1, h1 {
     font-size: calc(1.375rem + 4.5vw);
-    position: absolute;
+    position: relative;
     margin-left: 1.2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
 }
 
 p {
     font-size: 0.9rem;
-    position: absolute;
+    position: relative;
     margin-left: 1.2rem;
-    margin-top: 9.5rem;
+    margin-top: -0.5rem;
     line-height: 1.1rem;
 }
 
 #startexploring {
-    margin-top: 13rem;
+    margin-top: 1rem;
     border: 0.15rem solid #AFBBC7;
     padding: 0.25rem;
     border-radius: 2rem;
@@ -90,16 +92,17 @@ p {
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     margin-left: 1.2rem;
-    position: absolute;
+    position: relative;
 }
 
-.fs-6 {
+.float-end {
     font-size: 0.8rem!important;
-    margin-left: 14.5rem;
-    margin-top: 6.5rem;
+    margin-top: -7.7rem;
     transform: rotate(-90deg);
     width: 15rem;
     letter-spacing: 0.8rem;
+    margin-right: -6rem;
+    text-align: center;
 }
 
 .display-2 {
@@ -279,4 +282,191 @@ p {
     margin-top: 105rem;
     margin-left: 10rem;
     margin-right: 10rem;
+}
+
+
+@media (min-width: 480px) {
+    section {
+        background-image: url(../images/jumbotron-480px.jpeg);
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        height: 90%;
+    }
+}
+
+
+@media (min-width: 576px) {
+    section {
+        background-image: url(../images/jumbotron-576px.jpeg);
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .h1, h1 {
+        margin-top: 1rem;
+    }
+
+    p {
+        margin-top: -0.6rem;
+    }
+
+    #startexploring {
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    section {
+        background-image: url(../images/jumbotron-768px.jpeg);
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .h1, h1 {
+        font-size: calc(1.375rem + 3vw);
+        position: relative;
+        margin-left: 1.2rem;
+        margin-top: 1.8rem;
+        margin-bottom: 1.3rem;
+        background-color: white;
+        padding-left: 1.5rem;
+        width: 70%;
+        padding: 0.5rem 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        position: relative;
+        margin-left: 1.2rem;
+        margin-top: -0.5rem;
+        line-height: 1.1rem;
+        color: white;
+        background-color: black;
+        width: 40%;
+        padding: 0.35rem 1rem;
+    }
+
+    .float-end {
+        margin-top: -8.7rem;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    section {
+        background-image: url(../images/jumbotron-992px.jpeg);
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .h1, h1 {
+        font-size: calc(1.375rem + 3vw);
+        position: relative;
+        margin-left: 1.2rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1.3rem;
+        background-color: white;
+        padding-left: 1.5rem;
+        width: 85%;
+        padding: 0.5rem 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        position: relative;
+        margin-left: 1.2rem;
+        margin-top: -0.5rem;
+        line-height: 1.1rem;
+        color: white;
+        background-color: black;
+        width: 35%;
+        padding: 0.35rem 1rem;
+    }
+
+    .float-end {
+        margin-top: -12.7rem;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    li a {
+        display: block;
+        position: relative;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 0.3rem;
+        padding-top: 0rem;
+        background-color: transparent;
+    }
+
+    li a:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        background: black;
+        bottom: 47px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s;
+    }
+
+    li a:hover:after, li a:focus:after {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    section {
+        background-image: url(../images/jumbotron-1400px.jpeg);
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
 }

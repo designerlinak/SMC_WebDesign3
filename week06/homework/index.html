@@ -20,92 +20,95 @@
     <body>
         <header>
             <!-- JUMBOTRON -->
-            <section class="py-5 text-xl-center container-fluid jumbotron"></section>
+            <div class="text-xl-center container-fluid jumbotron">
 
-            <!-- TOP NAVBAR -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../homework/index.html">
-                        <img src="../homework/images/edge-logo.png" alt="brand logo"/>
-                    </a>
-    
-                    <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="black" fill="currentColor" id="menu-button" class="bi bi-filter-right" viewBox="0 0 16 16">
-                            <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
-                        </svg>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home" aria-current="page" href="../homework/index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../homework/about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../homework/services.html">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../homework/team.html">TEAM</a>
-                            </li>
-                        </ul>
+                <!-- TOP NAVBAR -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../homework/index.html">
+                            <img src="../homework/images/edge-logo.png" alt="brand logo"/>
+                        </a>
+        
+                        <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="black" fill="currentColor" id="menu-button" class="bi bi-filter-right" viewBox="0 0 16 16">
+                                <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
+                            </svg>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home" aria-current="page" href="../homework/index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../homework/about.html">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../homework/services.html">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../homework/team.html">TEAM</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- TEXT -->
+                <div class="row py-lg-5">
+                    <div class="col-lg-11 col-md-12 col-sm-11 mx-auto">
+                        <h1 class="fw-bold">New way<br>of living.</h1>
+                        <p id="start-para">Change the way you live life,<br>create your own space.</p>
+                        <a class="btn" id="startexploring" href="#start" role="button">Start Exploring</a>
                     </div>
                 </div>
-            </nav>
+                <div class="float-end">LOS ANGELES</div><br>
 
-            <!-- TEXT -->
-            <div class="row py-lg-5">
-                <div class="col-lg-11 col-md-12 col-sm-11 mx-auto">
-                    <h1 class="fw-bold">New way<br>of living.</h1>
-                    <p>Change the way you live life,<br>create your own space.</p>
-                    <a class="btn" id="startexploring" href="#" role="button">Start Exploring</a>
-                </div>
             </div>
-            <div class="float-end">LOS ANGELES</div><br>
         </header>
 
         <main>
             <!-- STEP 1 TO 4 -->
             <h2 id="start" class="display-2 text-wrap">How it works?</h2>
-            <div>
-                <img id="step1-img" src="images/step1.png" alt="step1-background">
+            
+            <div class="img-container1">
+                <img class="position-absolute top-50 start-50 translate-middle" id="step1-img" src="images/step1.png" alt="step1-background">
                 <h6 id="h6-step1">Step 1: Find Your Style</h6>
                 <p class="fs-5" id="p-step1">Take the deco quiz to build your dream container house at a price you can afford.</p>
-                <a class="btn btn-step1" href="#" role="button">TAKE QUIZ NOW →</a>
+                <a class="btn btn-step1 position-relative top-50 start-50 translate-middle" href="#" role="button">TAKE QUIZ NOW →</a>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="arrowdown-1" class="bi bi-arrow-down shadow-sm" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="arrowdown-1" class="bi bi-arrow-down shadow-sm top-50 start-50 translate-middle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
             </svg>
 
-            <div>
-                <img id="step2-img" src="images/step2.png" alt="step2-background">
+            <div class="img-container2"> 
+                <img class="position-absolute top-50 start-50 translate-middle" id="step2-img" src="images/step2.png" alt="step2-background">
                 <h6 id="h6-step2">Step 2: Choose Your Package</h6>
                 <p class="fs-5" id="p-step2">Our professional interior designer will be connected with you one-to-one and kindly guide you along the way.</p>
-                <a class="btn btn-step2" href="#" role="button">CHOOSE MY PACKAGE →</a>
+                <a class="btn btn-step2 position-relative top-50 start-50 translate-middle" href="#" role="button">CHOOSE MY PACKAGE →</a>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="arrowdown-2" class="bi bi-arrow-down shadow-sm" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="arrowdown-2" class="bi bi-arrow-down shadow-sm top-50 start-50 translate-middle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
             </svg>
 
-            <div>
-                <img id="step3-img" src="images/step3.png" alt="step3-background">
+            <div class="img-container3">
+                <img class="position-absolute top-50 start-50 translate-middle" id="step3-img" src="images/step3.png" alt="step3-background">
                 <h6 id="h6-step3">Step 3: We Build It</h6>
                 <p class="fs-5" id="p-step3">We construct your container house in our prefab factory in Los Angeles. We think all homes should be built this way.</p>
-                <a class="btn btn-step3" href="#" role="button">LEARN HOW IT WORKS →</a>
+                <a class="btn btn-step3 position-relative top-50 start-50 translate-middle" href="#" role="button">LEARN HOW IT WORKS →</a>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="arrowdown-3" class="bi bi-arrow-down shadow-sm" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="arrowdown-3" class="bi bi-arrow-down shadow-sm top-50 start-50 translate-middle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
             </svg>
 
-            <div>
-                <img id="step4-img" src="images/step4.png" alt="step4-background">
+            <div class="img-container4">
+                <img class="position-absolute top-50 start-50 translate-middle" id="step4-img" src="images/step4.png" alt="step4-background">
                 <h6 id="h6-step4">Step 4: We Deliver & Install It</h6>
                 <p class="fs-5" id="p-step4">Our team manages complete delivery and installation. You don’t lift a finger.</p>
-                <a class="btn btn-step4" href="#" role="button">TRACK YOUR DELIVERY →</a>
+                <a class="btn btn-step4 position-relative top-50 start-50 translate-middle" href="#" role="button">TRACK YOUR DELIVERY →</a>
             </div>
         </main>
 

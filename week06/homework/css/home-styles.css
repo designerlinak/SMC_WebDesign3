@@ -2,6 +2,16 @@ body {
     background-color: #f1f1f1;
 }
 
+.row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
 #menu-button {
     margin-top: 0.2rem;
     margin-left: -0.09rem;
@@ -107,10 +117,11 @@ p {
 
 .display-2 {
     font-size: calc(1.325rem + 5vw);
-    position: absolute;
-    margin-top: 38rem;
+    position: relative;
+    margin-top: 20rem;
     padding-left: 1.2rem;
     border-bottom: 0.5rem solid #FFE600;
+    width: 70%;
 }
 
 #step1-img {
@@ -299,6 +310,11 @@ p {
         max-width: 100%;
         height: 90%;
     }
+
+    .display-2 {
+        margin-top: 15rem;
+        width: 65%;
+    }
 }
 
 
@@ -327,6 +343,11 @@ p {
     #startexploring {
         margin-top: 0.5rem;
     }
+
+    .display-2 {
+        margin-top: 16rem;
+        width: 55%;
+    }
 }
 
 
@@ -354,6 +375,7 @@ p {
         padding-left: 1.5rem;
         width: 70%;
         padding: 0.5rem 1rem;
+        border-left: 1rem solid #FFE600;
     }
 
     p {
@@ -366,10 +388,17 @@ p {
         background-color: black;
         width: 40%;
         padding: 0.35rem 1rem;
+        border-left: 1rem solid #fff;
     }
 
     .float-end {
         margin-top: -8.7rem;
+    }
+
+    .display-2 {
+        margin-top: 15rem;
+        width: 45%;
+        font-size: calc(1.325rem + 4vw);
     }
 
 }
@@ -399,6 +428,7 @@ p {
         padding-left: 1.5rem;
         width: 85%;
         padding: 0.5rem 1rem;
+        border-left: 1.5rem solid #FFE600;
     }
 
     p {
@@ -411,6 +441,7 @@ p {
         background-color: black;
         width: 35%;
         padding: 0.35rem 1rem;
+        border-left: 1.5rem solid #fff;
     }
 
     .float-end {
@@ -452,6 +483,13 @@ p {
 
     li a:hover:after, li a:focus:after {
         width: 100%;
+    }
+
+    .display-2 {
+        margin-top: 10rem;
+        width: 31%;
+        font-size: calc(1.325rem + 2vw);
+        padding-left: 3.5rem;
     }
 }
 

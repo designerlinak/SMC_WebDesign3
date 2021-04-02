@@ -1,26 +1,24 @@
-.navbar-dark .navbar-toggler {
-    color: rgb(233, 233, 233);
-    border-radius: 2rem;
-    width: 4rem;
-    height: 4rem;
-    background-color: white;
+body {
+    background-color: #f1f1f1;
 }
 
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    margin-top: 2rem;
-    margin-right: 0.5rem;
+#menu-button {
+    margin-top: 0.2rem;
+    margin-left: -0.09rem;
 }
 
-#jumbotron {
+.jumbotron {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    width: 100%;
     height: 84%;
-    background-color: #000;
+}
+
+.py-5 {
+    padding-top: 7rem!important;
+    padding-bottom: 20rem!important;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
@@ -40,8 +38,31 @@ button, input, optgroup, select, textarea {
     background-color: white;
     margin-top: 0.3rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     border-radius: 2rem;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(233, 233, 233);
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: calc(1.375rem + 3.5vw);
+    letter-spacing: 1vw;
+    margin-bottom: 2vw;
 }
 
 .h1, h1 {
@@ -61,7 +82,7 @@ p {
 
 #startexploring {
     margin-top: 13rem;
-    border: 0.13rem solid #AFBBC7;
+    border: 0.15rem solid #AFBBC7;
     padding: 0.25rem;
     border-radius: 2rem;
     background-color: white;
@@ -69,21 +90,12 @@ p {
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     margin-left: 1.2rem;
-}
-
-#menu-button {
-    margin-top: 0.2rem;
-    margin-left: -0.09rem;
-}
-
-body {
-    background-color: #f1f1f1;
-    margin-bottom: 1rem;
+    position: absolute;
 }
 
 .fs-6 {
     font-size: 0.8rem!important;
-    margin-left: 14rem;
+    margin-left: 14.5rem;
     margin-top: 6.5rem;
     transform: rotate(-90deg);
     width: 15rem;
@@ -176,10 +188,6 @@ body {
 
 .btn {
     position: absolute;
-}
-
-.btn:hover {
-    color: white;
 }
 
 .btn-step1 {

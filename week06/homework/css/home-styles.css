@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: red;
+    background-color: black;
     height: 690px;
 }
 
@@ -130,19 +130,19 @@ p {
 }
 
 #step1-img {
-    margin-top: 37rem;
+    margin-top: 32.5rem;
 }
 
 #step2-img {
-    margin-top: 60rem;
+    margin-top: 55.5rem;
 }
 
 #step3-img {
-    margin-top: 83rem;
+    margin-top: 78.5rem;
 }
 
 #step4-img {
-    margin-top: 106rem;
+    margin-top: 101.5rem;
 }
 
 .img-container1 {
@@ -318,6 +318,7 @@ p {
         max-width: 100%;
         height: 90%;
         background-image: url(../images/jumbotron-480px.jpeg);
+        max-height: 75%;
     }
 
     .display-2 {
@@ -326,19 +327,19 @@ p {
     }
 
     #step1-img {
-        margin-top: 33.5rem;
+        margin-top: 29rem;
     }
     
     #step2-img {
-        margin-top: 56.5rem;
+        margin-top: 52rem;
     }
     
     #step3-img {
-        margin-top: 79.5rem;
+        margin-top: 75rem;
     }
     
     #step4-img {
-        margin-top: 102.5rem;
+        margin-top: 98rem;
     }
 
 
@@ -429,6 +430,7 @@ p {
     #step1-img {
         margin-top: 50rem;
         margin-left: 25rem;
+        content:url("../images/step1-clean.png");
     }
 
     .translate-middle {
@@ -471,6 +473,7 @@ p {
     .btn-step1 {
         margin-top: 2rem;
         margin-left: 6.5rem;
+        border: 0.2rem solid #FFE600;
     }
 
     #arrowdown-1 {
@@ -496,6 +499,7 @@ p {
     #step2-img {
         margin-top: 78rem;
         margin-left: 3rem;
+        content:url("../images/step2-clean.png");
     }
 
     #h6-step2 {
@@ -511,7 +515,8 @@ p {
 
     .btn-step2 {
         margin-top: 2rem;
-        margin-left: 8rem;
+        margin-left: 8.3rem;
+        border: 0.2rem solid #FFE600;
     }
 
     #arrowdown-2 {
@@ -537,6 +542,7 @@ p {
     #step3-img {
         margin-top: 106rem;
         margin-left: 25rem;
+        content:url("../images/step3-clean.png");
     }
 
     #h6-step3 {
@@ -592,6 +598,7 @@ p {
     #step4-img {
         margin-top: 134rem;
         margin-left: 3rem;
+        content:url("../images/step4-clean.png");
     }
 
     #h6-step4 {
@@ -621,6 +628,8 @@ p {
         margin-top: 2rem;
         margin-left: 8rem;
     }
+
+    
 
 }
 
@@ -741,6 +750,41 @@ p {
     }
 
     
+}
+
+
+@media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: calc(1.375rem + 3vw);
+        position: relative;
+        margin-left: 1.2rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1.3rem;
+        background-color: white;
+        padding-left: 1.5rem;
+        width: 85%;
+        padding: 0.5rem 1rem;
+        border-left: 1.5rem solid #FFE600;
+        text-align: left;
+    }
+
+    #start-para {
+        font-size: 0.8rem;
+        position: relative;
+        margin-left: 1.2rem;
+        margin-top: -0.5rem;
+        line-height: 1.1rem;
+        color: white;
+        background-color: black;
+        width: 35%;
+        padding: 0.35rem 1rem;
+        border-left: 1.5rem solid #fff;
+        text-align: left;
+    }
+
+    #startexploring {
+        float: left;
+    }
 }
 
 

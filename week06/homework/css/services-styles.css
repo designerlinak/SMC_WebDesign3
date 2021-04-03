@@ -1,18 +1,18 @@
 body {
-    background-color: #f3ebd2;
+    background-color: #f3eee0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,1.53rem);
+    padding-left: var(--bs-gutter-x,1.53rem);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #menu-button {
     margin-top: 0.2rem;
-    margin-left: -0.09rem;
-}
-
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-    color: black;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: black;
+    margin-left: -0.05rem;
 }
 
 .navbar-collapse {
@@ -24,16 +24,20 @@ body {
     background-color: white;
     margin-top: 0.3rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     border-radius: 2rem;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-light .navbar-toggler {
     color: rgb(233, 233, 233);
     border-radius: 2rem;
     width: 4rem;
     height: 4rem;
     background-color: white;
+    margin-right: 0rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
 }
 
 button, input, optgroup, select, textarea {
@@ -48,6 +52,18 @@ button, input, optgroup, select, textarea {
 .carousel-container {
     position: relative;
     padding: 1rem;
+}
+
+.carousel-text {
+    color: white;
+    font-size: 3.25rem;
+    background-color: purple;
+}
+
+.carousel-para {
+    color: white;
+    background-color: darkgreen;
+    font-size: 1.5rem;
 }
 
 .d-block {
@@ -73,6 +89,14 @@ button, input, optgroup, select, textarea {
     margin-left: 1.45rem;
     margin-right: 1.45rem;
     margin-top: 6rem;
+}
+
+.row>* {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y);
+    margin-bottom: 3rem;
 }
 
 .mb-3 {
@@ -150,6 +174,12 @@ button, input, optgroup, select, textarea {
     width: 90%;
 }
 
+.btn-smp1:hover {
+    color: white;
+    background-color: #2991c1;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .btn-smp2 {
     background-color: #3FD7C5;
     color: white;
@@ -157,6 +187,12 @@ button, input, optgroup, select, textarea {
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     width: 90%;
+}
+
+.btn-smp2:hover {
+    color: white;
+    background-color: #21c0ad;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn-smp3 {
@@ -168,6 +204,12 @@ button, input, optgroup, select, textarea {
     width: 90%;
 }
 
+.btn-smp3:hover {
+    color: white;
+    background-color: #9250c8;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .mark, mark {
     padding: .2em;
     background-color: #fffd92;
@@ -175,4 +217,410 @@ button, input, optgroup, select, textarea {
 
 
 
+@media (min-width: 480px) {
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+        margin-top: var(--bs-gutter-y);
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
 
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        height: 100%;
+    }
+
+    .card-body {
+        flex: none;
+        padding: 1rem 1rem .5rem 2rem;
+    }
+
+    .card-header {
+        padding: 1.5rem 1rem;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    .card-middle {
+        padding: 1rem 1rem;
+        border-top: 1px solid rgba(0,0,0,.125);
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+    }
+
+    .btn-smp1 {
+        background-color: #38AEE6;
+        color: white;
+        text-align: center;
+        width: 320px;
+        height: 50px;
+        margin: auto;
+        padding: .7rem;
+        position: relative;
+        top: 50%!important;
+        left: 50%!important;
+        transform: translate(-50%,-50%)!important;
+    }
+
+    .card-footer {
+        padding: .8rem 1rem;
+        border-top: 1px solid rgba(0,0,0,.125);
+    }
+
+    .para-1 {
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-top: -3rem;
+        float: right;
+    }
+
+    .display-6 {
+        font-size: calc(1.375rem + 1vw);
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .btn-smp2 {
+        color: white;
+        text-align: center;
+        width: 320px;
+        height: 50px;
+        margin: auto;
+        padding: .7rem;
+        position: relative;
+        top: 50%!important;
+        left: 50%!important;
+        transform: translate(-50%,-50%)!important;
+    }
+
+    .para-2 {
+        font-size: 0.8rem;
+        margin-left: 11rem;
+        margin-top: -3rem;
+        float: right;
+    }
+
+    .btn-smp3 {
+        color: white;
+        text-align: center;
+        width: 320px;
+        height: 50px;
+        margin: auto;
+        padding: .7rem;
+        position: relative;
+        top: 50%!important;
+        left: 50%!important;
+        transform: translate(-50%,-50%)!important;
+    }
+
+    .para-3 {
+        font-size: 0.8rem;
+        margin-left: 11rem;
+        margin-top: -3rem;
+        float: right;
+    }
+
+    .border-success1 {
+        border-top: 1.5rem solid #38AEE6;
+    }
+
+    .border-success2 {
+        border-top: 1.5rem solid #3FD7C5;
+    }
+
+    .border-success3 {
+        border-top: 1.5rem solid #B75CFF;
+    }
+
+
+}
+
+
+@media (min-width: 576px) {
+    .display-2 {
+        margin-top: 3rem;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3.45rem;
+        margin-right: 3.45rem;
+        margin-top: 10rem;
+    }
+
+    .display-6 {
+        font-size: calc(1.375rem + 1.25vw);
+    }
+
+    .para-1 {
+        font-size: 1.1rem;
+    }
+
+    .para-2 {
+        font-size: 1.1rem;
+        margin-left: 16rem;
+        margin-top: -3.8rem;
+    }
+
+    .para-3 {
+        font-size: 1.1rem;
+        margin-left: 16rem;
+        margin-top: -3.8rem;
+    }
+
+    .card-middle {
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    .btn-smp1 {
+        height: 55px;
+    }
+
+    .btn-smp2 {
+        height: 55px;
+    }
+
+    .btn-smp3 {
+        height: 55px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    
+    
+
+
+}
+
+
+@media (min-width: 992px) {
+    li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    li a {
+        display: block;
+        position: relative;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 0.3rem;
+        padding-top: 0rem;
+        background-color: transparent;
+    }
+
+    li a:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        background: black;
+        bottom: 47px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s;
+    }
+
+    li a:hover:after, li a:focus:after {
+        width: 100%;
+    }
+
+    .carousel-container {
+        margin: 2rem;
+    }
+
+    .display-2 {
+        font-size: calc(1.325rem + 1.7vw);
+    }
+
+    .row>* {
+        margin-top: 3rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .card-middle {
+        padding: 1.5rem 2rem;
+    }
+
+    .card-footer {
+        padding: 1rem 1rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .btn-smp1, .btn-smp2, .btn-smp3 {
+        height: 60px;
+    }
+
+
+}
+
+
+@media (min-width: 1200px) {
+    .carousel-container {
+        margin: 0rem 8rem;
+    }
+
+    .display-2 {
+        margin-top: 5rem;
+    }
+
+    .row>* {
+        margin-top: 3rem;
+        margin-right: 2rem;
+        width: 30%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 10rem;
+        width: 105%;
+    }
+
+    .premium {
+        margin-right: 0rem;
+    }
+
+    .display-6 {
+        font-size: calc(1.375rem + 0.5vw);
+    }
+
+    .card-header {
+        padding: 1.25rem 1rem;
+    }
+
+    .display-3 {
+        font-size: calc(1.525rem + 1vw);
+    }
+
+    .para-1 {
+        font-size: 0.8rem;
+    }
+
+    .para-2, .para-3 {
+        font-size: 0.8rem;
+        margin-left: 9rem;
+        margin-top: -3rem;
+    }
+
+    .card-middle {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .card-light {
+        height: 60.5%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .btn-smp1, .btn-smp2, .btn-smp3 {
+        height: 45px;
+        width: 250px;
+        padding: .55rem;
+    }
+
+    .card-footer {
+        padding: .8rem 1rem;
+    }
+
+
+}
+
+
+@media (min-width: 1400px) {
+    .carousel-container {
+        margin: 2rem 16rem;
+    }
+
+    .display-2 {
+        font-size: calc(1.325rem + 1vw);
+    }
+
+    .row {
+        margin-top: 13rem;
+    }
+
+    .row>* {
+        margin-top: 3rem;
+        margin-right: 5rem;
+        width: 25%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-bottom: 8rem;
+    }
+
+    .container {
+        padding-left: var(--bs-gutter-x,6.75rem);
+    }
+
+    .card-body {
+        flex: none;
+        padding: 1rem 0rem .5rem 1.3rem;
+    }
+
+    .para-1 {
+        margin-right: 1rem;
+    }
+
+    .para-2, .para-3 {
+        font-size: 0.8rem;
+        margin-left: 8.25rem;
+        margin-top: -3rem;
+    }
+
+    .card-light {
+        height: 58.8%;
+    }
+
+}
+
+
+@media (min-width: 1600px) {
+    .carousel-container {
+        margin: 4rem 23rem;
+    }
+
+}

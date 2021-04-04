@@ -1,0 +1,506 @@
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    height: 835px;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+#menu-button {
+    margin-top: 0.2rem;
+    margin-left: -0.09rem;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../images/about.jpeg);
+}
+
+.py-5 {
+    padding-top: 7rem!important;
+    padding-bottom: 20rem!important;
+}
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: white;
+    margin-top: 0.3rem;
+    padding-top: 0.5rem;
+    border-radius: 2rem;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(233, 233, 233);
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    margin-right: 0rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: calc(1.375rem + 3.5vw);
+    letter-spacing: 1vw;
+    margin-bottom: 2vw;
+}
+
+.h1, h1 {
+    font-size: calc(1.375rem + 7.5vw);
+    position: relative;
+    margin-left: 1.2rem;
+    margin-top: -30rem;
+    color: white;
+}
+
+.float-end {
+    font-size: 0.8rem!important;
+    margin-top: -38rem;
+    transform: rotate(-90deg);
+    width: 15rem;
+    letter-spacing: 0.8rem;
+    margin-right: -6rem;
+    text-align: center;
+    color: white;
+}
+
+.learn-more {
+    background-color: white;
+    width: 21rem;
+    margin-left: -0.8rem;
+    height: 9.5rem;
+    margin-top: 35.7rem;
+    padding: 3rem;
+}
+
+.h6, h6 {
+    font-size: 1.3rem;
+}
+
+.small, small {
+    font-size: 1em;
+}
+
+main {
+    padding-top: 1rem;
+}
+
+.circle-para {
+    margin-bottom: 1.5rem;
+}
+
+.square {
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.square span {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #333;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    transition: 0.5s;
+}
+
+.square:nth-child(1):hover span {
+    background-color: #d8c49e;
+    border: none;
+}
+
+.square:nth-child(2):hover span {
+    background-color: yellowgreen;
+    border: none;
+}
+
+.square:nth-child(3):hover span {
+    background-color: rgb(183, 128, 50);
+    border: none;
+}
+
+.square span:nth-child(1) {
+    animation: circle 6s linear infinite;
+}
+
+.square span:nth-child(2) {
+    animation: circle 4s linear infinite;
+}
+
+.square span:nth-child(3) {
+    animation: circle 10s linear infinite;
+}
+
+.square:hover span:nth-child(1) {
+    opacity: 0.3;
+}
+
+.square:hover span:nth-child(2) {
+    opacity: 0.6;
+}
+
+.square:hover span:nth-child(3) {
+    opacity: 0.8;
+}
+
+.square div {
+    /*border: 1px solid red;*/
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    color: #333;
+}
+
+.square div a {
+    color: #333;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media (min-width: 480px) {
+    header {
+        height: 620px;
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        height: 100%;
+        background-image: url(../images/about.jpeg);
+    }
+
+    .learn-more {
+        width: 25rem;
+    }
+
+    .h6, h6 {
+        font-size: 1.5rem;
+    }
+
+    .small, small {
+        font-size: 1.1em;
+    }
+
+    main {
+        margin-top: 13rem;
+    }
+
+
+}
+
+
+@media (min-width: 576px) {
+    header {
+        height: 620px;
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        background-image: url(../images/about.jpeg);
+    }
+
+    .learn-more {
+        width: 30rem;
+    }
+
+    .h6, h6 {
+        font-size: 1.7rem;
+    }
+
+    .small, small {
+        font-size: 1.2em;
+    }
+
+   
+}
+
+
+@media (min-width: 768px) {
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        background-image: url(../images/about.jpeg);
+    }
+
+    .h1, h1 {
+        margin-left: 3rem;
+    }
+
+    .square {
+        width: 22rem;
+        height: 22rem;
+        position: relative;
+        margin: auto;
+        margin-top: 6rem;
+    }
+
+
+    
+}
+
+
+@media (min-width: 992px) {
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        background-image: url(../images/about.jpeg);
+    }
+
+    .h1, h1 {
+        margin-top: -35rem;
+    }
+
+    .learn-more {
+        width: 25rem;
+        margin-top: 38.5rem;
+        padding: 2.7rem 3rem 3rem 3rem;
+    }
+
+    .float-end {
+        font-size: 1rem!important;
+        margin-top: -35rem;
+        transform: rotate(-90deg);
+        width: 21rem;
+        letter-spacing: 1.3rem;
+        margin-right: -9rem;
+        text-align: center;
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    li a {
+        display: block;
+        position: relative;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 0.3rem;
+        padding-top: 0rem;
+        background-color: transparent;
+    }
+
+    li a:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        background: white;
+        bottom: 47px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s;
+    }
+
+    li a:hover:after, li a:focus:after {
+        width: 100%;
+    }
+
+    main {
+        margin-top: 15rem;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .square {
+        width: 15rem;
+        height: 15rem;
+        margin-top: 5rem;
+    }
+
+    .circle-header {
+        font-size: calc(1.325rem + -0.1vw);
+    }
+
+    .circle-para {
+        font-size: .8rem;
+    }
+
+    .circle-button {
+        font-size: .8rem;
+    }
+
+    
+}
+
+
+@media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: calc(1.375rem + 6.5vw);
+        margin-left: -45rem;
+    }
+
+    .learn-more {
+        padding: 3rem;
+        width: 30rem;
+    }
+
+    .h6, h6 {
+        margin-left: -6rem;
+    }
+
+    .text-muted {
+        margin-left: -5.5rem;
+    }
+
+    .container {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .square {
+        width: 17rem;
+        height: 17rem;
+        margin-top: 5rem;
+    }
+
+    .circle-header {
+        font-size: calc(1.325rem + 0.5vw);
+    }
+
+    .circle-para {
+        font-size: .9rem;
+    }
+
+    .circle-button {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+
+@media (min-width: 1400px) {
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        background-image: url(../images/about.jpeg);
+    }
+
+    .h1, h1 {
+        font-size: calc(1.375rem + 5.5vw);
+        margin-left: -55rem;
+    }
+
+    .learn-more {
+        padding: 3rem;
+        width: 35rem;
+    }
+
+    .h6, h6 {
+        margin-left: -8rem;
+    }
+
+    .text-muted {
+        margin-left: -7.5rem;
+    }
+
+    .container {
+        padding: 0rem 5rem 0rem 5rem;
+    }
+
+    
+}
+
+
+@media (min-width: 1600px) {
+    .h1, h1 {
+        font-size: calc(1.375rem + 5.5vw);
+        margin-left: -70rem;
+    }
+}

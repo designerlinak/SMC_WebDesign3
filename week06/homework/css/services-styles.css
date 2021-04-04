@@ -55,21 +55,49 @@ button, input, optgroup, select, textarea {
 }
 
 .carousel-text {
+    text-align: left;
     color: white;
-    font-size: 3.25rem;
-    background-color: purple;
+    font-size: 1.5rem;
+    font-weight: 300;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.711) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: -4rem;
+    width: 80%;
+    padding: .3rem 0rem .3rem .7rem;
 }
 
 .carousel-para {
     color: white;
-    background-color: darkgreen;
-    font-size: 1.5rem;
+    font-size: .8rem;
+    border: 0.3rem solid white;
+    border-radius: 2rem;
+    width: 230px;
+    padding: 0.4rem;
+    font-weight: 600;
+    margin-left: -4rem;
+    margin-top: 20px;
 }
 
 .d-block {
     display: block!important;
-    border-radius: 0.5rem;
-    border: 0.2rem solid white;
+    border: 0.5rem solid white;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
 }
 
 .display-2 {
@@ -218,6 +246,10 @@ button, input, optgroup, select, textarea {
 
 
 @media (min-width: 480px) {
+    .container {
+        margin-bottom: 8rem;
+    }
+
     .row>* {
         flex-shrink: 0;
         width: 100%;
@@ -371,18 +403,24 @@ button, input, optgroup, select, textarea {
 
     .para-1 {
         font-size: 1.1rem;
+        margin-left: 9rem;
+        margin-top: -3.7rem;
     }
 
     .para-2 {
         font-size: 1.1rem;
-        margin-left: 16rem;
-        margin-top: -3.8rem;
+        margin-left: 8.7rem;
+        margin-top: -3.7rem;
     }
 
     .para-3 {
         font-size: 1.1rem;
-        margin-left: 16rem;
-        margin-top: -3.8rem;
+        margin-left: 8.7rem;
+        margin-top: -3.7rem;
+    }
+
+    .card-body {
+        padding: 1rem 0rem .5rem 2rem;
     }
 
     .card-middle {
@@ -410,7 +448,37 @@ button, input, optgroup, select, textarea {
 
 
 @media (min-width: 768px) {
+    .d-block {
+        display: block!important;
+        border: .65rem solid white;
+    }
+
+    .carousel-indicators {
+        bottom: 10px;
+    }
+
+    .para-1 {
+        font-size: 1rem;
+        margin-left: 8rem;
+        margin-top: -3rem;
+    }
     
+    .para-2 {
+        font-size: 1rem;
+        margin-left: 17rem;
+        margin-top: -3.7rem;
+    }
+    
+    .para-3 {
+        font-size: 1rem;
+        margin-left: 17rem;
+        margin-top: -3.7rem;
+    }
+
+    .card-body {
+        flex: none;
+        padding: 1rem 1rem .5rem 2rem;
+    }
     
 
 
@@ -485,6 +553,23 @@ button, input, optgroup, select, textarea {
         height: 60px;
     }
 
+    .d-block {
+        border: .8rem solid white;
+    }
+
+    .card-body {
+        flex: none;
+        padding: 1rem 2rem .5rem 2rem;
+    }
+
+
+}
+
+
+@media (min-width: 1080px) {
+    .carousel-container {
+        margin: 2rem 5rem;
+    }
 
 }
 
@@ -564,6 +649,11 @@ button, input, optgroup, select, textarea {
 
     .card-footer {
         padding: .8rem 1rem;
+    }
+
+    .card-body {
+        flex: none;
+        padding: 1rem 0rem .5rem 2rem;
     }
 
 

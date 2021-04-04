@@ -150,7 +150,7 @@ main {
 }
 
 .square:nth-child(3):hover span {
-    background-color: rgb(183, 128, 50);
+    background-color: rgb(163, 113, 45);
     border: none;
 }
 
@@ -179,7 +179,6 @@ main {
 }
 
 .square div {
-    /*border: 1px solid red;*/
     position: absolute;
     position: absolute;
     top: 50%;
@@ -195,6 +194,11 @@ main {
     border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
     border: 1px solid #333;
     padding: 8px;
+}
+
+.square div a:hover {
+    color: white;
+    border: 1px solid white;
 }
 
 @keyframes circle {

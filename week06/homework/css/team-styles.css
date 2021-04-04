@@ -108,11 +108,7 @@ button, input, optgroup, select, textarea {
 
 .small, small {
     font-size: 1em;
-    margin-left: 6rem;
-}
-
-main {
-
+    margin-left: .5rem;
 }
 
 #validationCustom01, #validationCustom02 {
@@ -163,6 +159,16 @@ main {
     border-radius: 2rem;
     font-size: 1rem;
     margin-bottom: .8rem;
+}
+
+.btn-subscribe:hover {
+    color: white;
+    background-color: black;
+}
+
+.btn-warning {
+    background-color: #FFE600;
+    border-color: #FFE600;
 }
 
 
@@ -333,8 +339,6 @@ main {
         width: 100%;
     }
 
-
-    
     
 }
 
@@ -353,7 +357,6 @@ main {
     .btn-subscribe {
         font-size: 1.4rem;
         margin-left: -5rem;
-        }
     }
 
     .text-muted {
@@ -363,7 +366,6 @@ main {
     .small, small {
         margin-left: 1rem;
     }
-
 
 }
 
@@ -385,8 +387,11 @@ main {
     }
 
     .learn-more {
-        padding: 3rem;
         width: 35rem;
+    }
+
+    .btn-subscribe {
+        margin-left: -7rem;
     }
 
     .text-muted {

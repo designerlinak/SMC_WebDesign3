@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #f1f1f1;
 }
 
 header {
@@ -103,69 +103,16 @@ button, input, optgroup, select, textarea {
     margin-left: -0.8rem;
     height: 9.5rem;
     margin-top: 35.7rem;
-    padding: .5rem 1.5rem 1rem;
+    padding: 3rem;
+}
+
+.h6, h6 {
+    font-size: 1.3rem;
 }
 
 .small, small {
     font-size: 1em;
-    margin-left: 6rem;
 }
-
-main {
-
-}
-
-#validationCustom01, #validationCustom02 {
-    margin-top: 0.5rem;
-}
-
-.form-check {
-    display: block;
-    min-height: 1.5rem;
-    padding-left: 1.5em;
-    margin-bottom: .125rem;
-    margin-top: 2rem;
-    margin-left: 1rem;
-}
-
-.modal-header {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1rem 1rem 2rem;
-    border-bottom: 1px solid #dee2e6;
-    border-top-left-radius: calc(.3rem - 1px);
-    border-top-right-radius: calc(.3rem - 1px);
-}
-
-.modal-body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: 1rem 2rem 0rem 2rem;
-}
-
-.modal-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: flex-end;
-    padding: .75rem 0rem;
-    border-top: 1px solid #dee2e6;
-    border-bottom-right-radius: calc(.3rem - 1px);
-    border-bottom-left-radius: calc(.3rem - 1px);
-}
-
-.btn-subscribe {
-    color: black;
-    border: 0.2rem solid black;
-    border-radius: 2rem;
-    font-size: 1rem;
-    margin-bottom: .8rem;
-}
-
-
 
 
 
@@ -187,19 +134,14 @@ main {
 
     .learn-more {
         width: 25rem;
-        padding: 0.3rem 1.5rem 1rem;
     }
 
-    .btn-subscribe {
-        font-size: 1.2rem;
+    .h6, h6 {
+        font-size: 1.5rem;
     }
 
     .small, small {
         font-size: 1.1em;
-    }
-
-    main {
-        margin-top: 13rem;
     }
 
 
@@ -223,6 +165,10 @@ main {
 
     .learn-more {
         width: 30rem;
+    }
+
+    .h6, h6 {
+        font-size: 1.7rem;
     }
 
     .small, small {
@@ -249,6 +195,7 @@ main {
     }
 
 
+    
 }
 
 
@@ -270,8 +217,8 @@ main {
     .learn-more {
         width: 25rem;
         margin-top: 38.5rem;
-        padding: 0.2rem 0rem 0rem 2rem;
-}
+        padding: 2.7rem 3rem 3rem 3rem;
+    }
 
     .float-end {
         font-size: 1rem!important;
@@ -333,8 +280,6 @@ main {
         width: 100%;
     }
 
-
-    
     
 }
 
@@ -346,22 +291,16 @@ main {
     }
 
     .learn-more {
-        padding: 0.2rem 0rem 0rem 2rem;
+        padding: 3rem;
         width: 30rem;
     }
 
-    .btn-subscribe {
-        font-size: 1.4rem;
-        margin-left: -5rem;
-        }
+    .h6, h6 {
+        margin-left: -6rem;
     }
 
     .text-muted {
         margin-left: -5.5rem;
-    }
-
-    .small, small {
-        margin-left: 1rem;
     }
 
 
@@ -389,12 +328,13 @@ main {
         width: 35rem;
     }
 
+    .h6, h6 {
+        margin-left: -8rem;
+    }
+
     .text-muted {
         margin-left: -7.5rem;
     }
-
-
-    
 }
 
 

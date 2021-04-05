@@ -243,6 +243,29 @@ button, input, optgroup, select, textarea {
     background-color: #fffd92;
 }
 
+.alert-dark {
+    color: black;
+    background-color: #FFE600;
+}
+
+.alert {
+    position: relative;
+    padding: 1rem 3rem 1rem 1rem;
+    margin-bottom: 0rem;
+    border: 1px solid transparent;
+    border-radius: 0rem;
+}
+
+.alert-dismissible .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0.2rem 0.5rem;
+}
+
+
+
 
 
 @media (min-width: 480px) {
@@ -378,6 +401,10 @@ button, input, optgroup, select, textarea {
         border-top: 1.5rem solid #B75CFF;
     }
 
+    .alert {
+        padding: 1rem 3rem 1rem 1rem;
+    }
+
 
 }
 
@@ -444,6 +471,10 @@ button, input, optgroup, select, textarea {
         height: 55px;
     }
 
+    .alert {
+        padding: 1rem 3rem 1rem 1.5rem;
+    }
+
 }
 
 
@@ -479,7 +510,25 @@ button, input, optgroup, select, textarea {
         flex: none;
         padding: 1rem 1rem .5rem 2rem;
     }
+
+    .alert {
+        padding: 1rem 3rem 1rem 2rem;
+    }
     
+
+
+}
+
+
+@media (min-width: 835px) {
+    .alert-dismissible .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: 0.2rem 0.5rem;
+        margin-top: 1.2rem;
+    }
 
 
 }

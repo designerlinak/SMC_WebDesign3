@@ -120,6 +120,7 @@ main {
 
 .circle-para {
     margin-bottom: 1.5rem;
+    font-size: .7rem;
 }
 
 .square {
@@ -238,6 +239,10 @@ article {
     margin-top: 3rem;
 }
 
+.circle-header {
+    margin-bottom: 1rem;
+}
+
 
 
 
@@ -337,6 +342,15 @@ article {
         border-bottom-left-radius: 0rem;
         border-bottom-right-radius: 0rem;
     }
+
+    .circle-header {
+        margin-bottom: 1rem;
+    }
+
+    .circle-para {
+        font-size: .9rem;
+    }
+
 
 
     
@@ -443,7 +457,7 @@ article {
     }
 
     .circle-para {
-        font-size: .8rem;
+        font-size: .5rem;
     }
 
     .circle-button {
@@ -458,7 +472,8 @@ article {
     }
 
     #article-para {
-        margin-top: 2rem;
+        font-size: 1.5rem;
+        margin-top: 3rem;
     }
 
     
@@ -495,11 +510,11 @@ article {
     }
 
     .circle-header {
-        font-size: calc(1.325rem + 0.5vw);
+        font-size: calc(1.325rem + 0.1vw);
     }
 
     .circle-para {
-        font-size: .9rem;
+        font-size: .7rem;
     }
 
     .circle-button {

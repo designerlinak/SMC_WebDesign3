@@ -127,6 +127,12 @@ button, input, optgroup, select, textarea {
     margin-left: 1rem;
 }
 
+.subscription-title {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
 .modal-header {
     display: flex;
     flex-shrink: 0;

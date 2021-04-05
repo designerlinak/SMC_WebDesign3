@@ -222,10 +222,6 @@ p {
     margin-top: 3.7rem;
 }
 
-.btn {
-    position: absolute;
-}
-
 .btn-step1 {
     background-color: #FFE600;
     color: white;
@@ -302,6 +298,63 @@ p {
     padding: 0.4rem;
     margin-top: 4.7rem;
 }
+
+#validationCustom01, #validationCustom02 {
+    margin-top: 0.5rem;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.subscription-title {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 2rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .75rem 0rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.btn-warning {
+    background-color: #FFE600;
+    border-color: #FFE600;
+}
+
+
+
+
 
 
 @media (min-width: 480px) {

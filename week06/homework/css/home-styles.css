@@ -325,8 +325,6 @@ p {
         width: 280px;
     }
     
-
-
 }
 
 
@@ -412,8 +410,8 @@ p {
     }
 
     #step1-img {
-        margin-top: 50rem;
-        margin-left: 25rem;
+        margin-top: 3rem;
+        margin-left: 22rem;
         content:url("../images/step1-clean.png");
     }
 
@@ -436,7 +434,7 @@ p {
     }
 
     #h6-step1 {
-        margin-top: -2rem;
+        margin-top: -19rem;
         padding-top: 1.5rem;
         margin-left: 2.5rem;
     }
@@ -466,7 +464,7 @@ p {
         background-color: white;
         border-radius: 2rem;
         padding: 0.4rem;
-        margin-top: 6rem;
+        margin-top: 7rem;
         margin-left: 23rem;
         margin-right: 23rem;
     }
@@ -474,20 +472,20 @@ p {
     .img-container2 {
         width: 400px;
         height: 263px;
-        margin-top: 5rem;
+        margin-top: 4rem;
         background-color: white;
         border-radius: 1.2rem;
         margin-left: 20rem;
     }
 
     #step2-img {
-        margin-top: 78rem;
-        margin-left: 3rem;
+        margin-top: 3rem;
+        margin-left: -17rem;
         content:url("../images/step2-clean.png");
     }
 
     #h6-step2 {
-        margin-top: -2rem;
+        margin-top: -19rem;
         padding-top: 1.5rem;
         margin-left: 5rem;
     }
@@ -509,7 +507,7 @@ p {
         background-color: white;
         border-radius: 2rem;
         padding: 0.4rem;
-        margin-top: 6rem;
+        margin-top: 7rem;
         margin-left: 23rem;
         margin-right: 23rem;
     }
@@ -517,20 +515,20 @@ p {
     .img-container3 {
         width: 400px;
         height: 263px;
-        margin-top: 5rem;
+        margin-top: 4rem;
         background-color: white;
         border-radius: 1.2rem;
         margin-left: 3rem;
     }
 
     #step3-img {
-        margin-top: 106rem;
-        margin-left: 25rem;
+        margin-top: 3rem;
+        margin-left: 22rem;
         content:url("../images/step3-clean.png");
     }
 
     #h6-step3 {
-        margin-top: -2rem;
+        margin-top: -19rem;
         padding-top: 1.5rem;
         margin-left: 2.5rem;
     }
@@ -564,7 +562,7 @@ p {
         background-color: white;
         border-radius: 2rem;
         padding: 0.4rem;
-        margin-top: 6rem;
+        margin-top: 7rem;
         margin-left: 23rem;
         margin-right: 23rem;
     }
@@ -572,21 +570,21 @@ p {
     .img-container4 {
         width: 400px;
         height: 263px;
-        margin-top: 5rem;
+        margin-top: 4rem;
         background-color: white;
         border-radius: 1.2rem;
         margin-left: 20rem;
-        margin-bottom: 7rem;
+        margin-bottom: 10rem;
     }
 
     #step4-img {
-        margin-top: 134rem;
-        margin-left: 3rem;
+        margin-top: 3rem;
+        margin-left: -17rem;
         content:url("../images/step4-clean.png");
     }
 
     #h6-step4 {
-        margin-top: -2rem;
+        margin-top: -19rem;
         padding-top: 1.5rem;
         margin-left: 5rem;
     }
@@ -613,7 +611,6 @@ p {
         margin-left: 8rem;
     }
 
-    
 
 }
 
@@ -697,35 +694,19 @@ p {
     }
 
     .img-container1 {
-        margin-left: 9rem;
-    }
-
-    #step1-img {
-        margin-left: 31rem;
+        margin-left: 10rem;
     }
 
     .img-container2 {
-        margin-left: 28rem;
-    }
-
-    #step2-img {
-        margin-left: 11rem;
+        margin-left: 27rem;
     }
 
     .img-container3 {
-        margin-left: 9rem;
-    }
-
-    #step3-img {
-        margin-left: 31rem;
+        margin-left: 10rem;
     }
 
     .img-container4 {
-        margin-left: 28rem;
-    }
-
-    #step4-img {
-        margin-left: 11rem;
+        margin-left: 27rem;
     }
 
     #arrowdown-1, #arrowdown-2, #arrowdown-3, #arrowdown-4 {

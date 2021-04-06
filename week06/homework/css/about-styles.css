@@ -243,6 +243,32 @@ article {
     margin-bottom: 1rem;
 }
 
+.square:nth-child(1):hover .circle-header {
+    color: white;
+}
+
+.square:nth-child(1):hover .circle-para {
+    color: white;
+}
+
+.square:nth-child(2):hover .circle-header {
+    color: white;
+}
+
+.square:nth-child(2):hover .circle-para {
+    color: white;
+}
+
+.square:nth-child(3):hover .circle-header {
+    color: white;
+}
+
+.square:nth-child(3):hover .circle-para {
+    color: white;
+}
+
+
+
 
 
 

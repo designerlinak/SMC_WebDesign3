@@ -218,6 +218,47 @@ b, strong {
     text-align: center;
 }
 
+.card {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 8rem;
+    margin: auto;
+    border: none;
+}
+
+.content {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #1e1e1e, transparent);
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 180px;
+}
+
+.sns a {
+    color: white;
+    margin: .5rem;
+    text-decoration: none;
+}
+
+.card:hover .content {
+    top: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.21);
+}
+
 
 
 

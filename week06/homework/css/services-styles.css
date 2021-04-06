@@ -1,18 +1,38 @@
 body {
-    background-color: #f3eee0;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    height: 835px;
 }
 
 .container-fluid {
     width: 100%;
-    padding-right: var(--bs-gutter-x,1.53rem);
-    padding-left: var(--bs-gutter-x,1.53rem);
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
     margin-left: auto;
 }
 
 #menu-button {
     margin-top: 0.2rem;
-    margin-left: -0.05rem;
+    margin-left: -0.09rem;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../images/service.jpg);
+}
+
+.py-5 {
+    padding-top: 7rem!important;
+    padding-bottom: 20rem!important;
 }
 
 .navbar-collapse {
@@ -47,6 +67,53 @@ button, input, optgroup, select, textarea {
     line-height: inherit;
     margin-top: 2rem;
     margin-right: 0.5rem;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: calc(1.375rem + 3.5vw);
+    letter-spacing: 1vw;
+    margin-bottom: 2vw;
+}
+
+.h1, h1 {
+    font-size: calc(1.375rem + 7.5vw);
+    position: relative;
+    margin-left: 1.2rem;
+    margin-top: -30rem;
+    color: white;
+}
+
+.float-end {
+    font-size: 0.8rem!important;
+    margin-top: -38rem;
+    transform: rotate(-90deg);
+    width: 15rem;
+    letter-spacing: 0.8rem;
+    margin-right: -6rem;
+    text-align: center;
+    color: white;
+}
+
+.learn-more {
+    background-color: white;
+    width: 21rem;
+    margin-left: -0.8rem;
+    height: 9.5rem;
+    margin-top: 35.7rem;
+    padding: 3rem;
+}
+
+.h6, h6 {
+    font-size: 1.3rem;
+}
+
+.small, small {
+    font-size: 1em;
+}
+
+main {
+    padding-top: 1rem;
 }
 
 .carousel-container {
@@ -110,21 +177,13 @@ button, input, optgroup, select, textarea {
 }
 
 .row {
-    --bs-gutter-x: 1.5rem;
+    --bs-gutter-x: 0rem;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1.45rem;
-    margin-right: 1.45rem;
-    margin-top: 6rem;
-}
-
-.row>* {
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x)/ 2);
-    padding-left: calc(var(--bs-gutter-x)/ 2);
-    margin-top: var(--bs-gutter-y);
-    margin-bottom: 3rem;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
 }
 
 .mb-3 {
@@ -250,10 +309,13 @@ button, input, optgroup, select, textarea {
 
 .alert {
     position: relative;
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 1rem 3rem 1rem 2rem;
     margin-bottom: 0rem;
     border: 1px solid transparent;
     border-radius: 0rem;
+    margin-left: var(--bs-gutter-x,-0.8rem);
+    margin-right: var(--bs-gutter-x,-0.8rem);
+    text-align: left;
 }
 
 .alert-dismissible .btn-close {
@@ -268,20 +330,41 @@ button, input, optgroup, select, textarea {
 
 
 
+
+
 @media (min-width: 480px) {
-    .container {
-        margin-bottom: 8rem;
+    header {
+        height: 620px;
     }
 
-    .row>* {
-        flex-shrink: 0;
-        width: 100%;
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
         max-width: 100%;
-        padding-right: calc(var(--bs-gutter-x)/ 2);
-        padding-left: calc(var(--bs-gutter-x)/ 2);
-        margin-top: var(--bs-gutter-y);
-        margin-bottom: 3rem;
-        margin-top: 1rem;
+        height: 835px;
+    }
+
+    .learn-more {
+        width: 25rem;
+    }
+
+    .h6, h6 {
+        font-size: 1.5rem;
+    }
+
+    .small, small {
+        font-size: 1.1em;
+    }
+
+    main {
+        margin-top: 13rem;
+    }
+
+    .container {
+        margin-bottom: 8rem;
     }
 
     .card {
@@ -401,27 +484,40 @@ button, input, optgroup, select, textarea {
         border-top: 1.5rem solid #B75CFF;
     }
 
-    .alert {
-        padding: 1rem 3rem 1rem 1rem;
-    }
 
 
 }
 
 
 @media (min-width: 576px) {
-    .display-2 {
-        margin-top: 3rem;
+    header {
+        height: 620px;
     }
 
-    .row {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 3.45rem;
-        margin-right: 3.45rem;
-        margin-top: 10rem;
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        background-image: url(../images/service2.jpg);
+    }
+
+    .learn-more {
+        width: 30rem;
+    }
+
+    .h6, h6 {
+        font-size: 1.7rem;
+    }
+
+    .small, small {
+        font-size: 1.2em;
+    }
+
+    .display-2 {
+        margin-top: 3rem;
     }
 
     .display-6 {
@@ -471,14 +567,24 @@ button, input, optgroup, select, textarea {
         height: 55px;
     }
 
-    .alert {
-        padding: 1rem 3rem 1rem 1.5rem;
-    }
 
 }
 
 
 @media (min-width: 768px) {
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .h1, h1 {
+        margin-left: 3rem;
+    }
+
     .d-block {
         display: block!important;
         border: .65rem solid white;
@@ -511,16 +617,12 @@ button, input, optgroup, select, textarea {
         padding: 1rem 1rem .5rem 2rem;
     }
 
-    .alert {
-        padding: 1rem 3rem 1rem 2rem;
-    }
-    
 
 
 }
 
 
-@media (min-width: 835px) {
+@media (min-width: 850px) {
     .alert-dismissible .btn-close {
         position: absolute;
         top: 0;
@@ -530,11 +632,52 @@ button, input, optgroup, select, textarea {
         margin-top: 1.2rem;
     }
 
-
 }
 
 
 @media (min-width: 992px) {
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .h1, h1 {
+        margin-top: -35rem;
+    }
+
+    .learn-more {
+        width: 25rem;
+        margin-top: 38.5rem;
+        padding: 2.7rem 3rem 3rem 3rem;
+    }
+
+    .float-end {
+        font-size: 1rem!important;
+        margin-top: -35rem;
+        transform: rotate(-90deg);
+        width: 21rem;
+        letter-spacing: 1.3rem;
+        margin-right: -9rem;
+        text-align: center;
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
+
     li {
         display: inline-block;
         margin-left: 30px;
@@ -561,7 +704,7 @@ button, input, optgroup, select, textarea {
         width: 0%;
         height: 2px;
         position: absolute;
-        background: black;
+        background: white;
         bottom: 47px;
         left: 50%;
         transform: translateX(-50%);
@@ -572,18 +715,16 @@ button, input, optgroup, select, textarea {
         width: 100%;
     }
 
+    main {
+        margin-top: 15rem;
+    }
+
     .carousel-container {
         margin: 2rem;
     }
 
     .display-2 {
         font-size: calc(1.325rem + 1.7vw);
-    }
-
-    .row>* {
-        margin-top: 3rem;
-        padding-left: 7rem;
-        padding-right: 7rem;
     }
 
     .card-middle {
@@ -624,31 +765,30 @@ button, input, optgroup, select, textarea {
 
 
 @media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: calc(1.375rem + 6.5vw);
+        margin-left: -38rem;
+    }
+
+    .learn-more {
+        padding: 3rem;
+        width: 30rem;
+    }
+
+    .h6, h6 {
+        margin-left: -4.8rem;
+    }
+
+    .text-muted {
+        margin-left: -5.5rem;
+    }
+
     .carousel-container {
         margin: 0rem 8rem;
     }
 
     .display-2 {
         margin-top: 5rem;
-    }
-
-    .row>* {
-        margin-top: 3rem;
-        margin-right: 2rem;
-        width: 30%;
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .row {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        margin-top: 10rem;
-        width: 105%;
     }
 
     .premium {
@@ -710,29 +850,39 @@ button, input, optgroup, select, textarea {
 
 
 @media (min-width: 1400px) {
+    .jumbotron {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .h1, h1 {
+        font-size: calc(1.375rem + 5.5vw);
+        margin-left: -48rem;
+    }
+
+    .learn-more {
+        padding: 3rem;
+        width: 35rem;
+    }
+
+    .h6, h6 {
+        margin-left: -6.8rem;
+    }
+
+    .text-muted {
+        margin-left: -7.5rem;
+    }
+
     .carousel-container {
         margin: 2rem 16rem;
     }
 
     .display-2 {
         font-size: calc(1.325rem + 1vw);
-    }
-
-    .row {
-        margin-top: 13rem;
-    }
-
-    .row>* {
-        margin-top: 3rem;
-        margin-right: 5rem;
-        width: 25%;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        margin-bottom: 8rem;
-    }
-
-    .container {
-        padding-left: var(--bs-gutter-x,6.75rem);
     }
 
     .card-body {
@@ -758,6 +908,11 @@ button, input, optgroup, select, textarea {
 
 
 @media (min-width: 1600px) {
+    .h1, h1 {
+        font-size: calc(1.375rem + 5.5vw);
+        margin-left: -62rem;
+    }
+
     .carousel-container {
         margin: 4rem 23rem;
     }

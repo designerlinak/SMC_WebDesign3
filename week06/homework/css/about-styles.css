@@ -246,6 +246,8 @@ article {
 
 
 
+
+
 @media (min-width: 480px) {
     header {
         height: 620px;
@@ -259,7 +261,6 @@ article {
         top: 0;
         max-width: 100%;
         height: 835px;
-        background-image: url(../images/about.jpeg);
     }
 
     .learn-more {
@@ -294,7 +295,6 @@ article {
         position: absolute;
         top: 0;
         max-width: 100%;
-        background-image: url(../images/about.jpeg);
     }
 
     .learn-more {
@@ -321,7 +321,6 @@ article {
         position: absolute;
         top: 0;
         max-width: 100%;
-        background-image: url(../images/about.jpeg);
     }
 
     .h1, h1 {
@@ -352,8 +351,6 @@ article {
     }
 
 
-
-    
 }
 
 
@@ -365,7 +362,6 @@ article {
         position: absolute;
         top: 0;
         max-width: 100%;
-        background-image: url(../images/about.jpeg);
     }
 
     .h1, h1 {
@@ -550,7 +546,6 @@ article {
         position: absolute;
         top: 0;
         max-width: 100%;
-        background-image: url(../images/about.jpeg);
     }
 
     .h1, h1 {

@@ -113,12 +113,24 @@ button, input, optgroup, select, textarea {
 }
 
 main {
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 .carousel-container {
-    position: relative;
-    padding: 1rem;
+    position: absolute;
+    margin-top: 14rem;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+    width: 80%;
+}
+
+.package-container {
+    margin-top: 77rem;
+    position: absolute;
+    width: 90%;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+    padding-bottom: 7rem;
 }
 
 .carousel-text {
@@ -149,7 +161,8 @@ main {
 
 .d-block {
     display: block!important;
-    border: 0.5rem solid white;
+    border: 0.5rem solid #f3eee0;
+    border-radius: 1rem;
 }
 
 .carousel-indicators {
@@ -168,12 +181,37 @@ main {
 }
 
 .display-2 {
-    font-size: calc(1.325rem + 2vw);
+    font-size: calc(1.325rem + 1.5vw);
     position: absolute;
     margin-top: 1rem;
-    padding-left: 1.2rem;
-    border-bottom: 0.5rem solid #8a6132;
-    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+    border-bottom: 0.4rem solid #D9C49C;
+    padding-bottom: 0.3rem;
+    left: 0;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    margin-top: 0rem;
+}
+
+.col {
+    margin-bottom: 4rem;
 }
 
 .row {
@@ -241,7 +279,7 @@ main {
 }
 
 .card-middle {
-    padding: .5rem 1rem;
+    padding: .6rem 1rem;
     border-top: 1px solid rgba(0,0,0,.125);
     font-size: 0.9rem;
     margin-bottom: 0rem;
@@ -309,7 +347,7 @@ main {
 
 .alert {
     position: relative;
-    padding: 1rem 3rem 1rem 2rem;
+    padding: 1rem 3rem 1rem 1.2rem;
     margin-bottom: 0rem;
     border-bottom: 1px solid white;
     border-radius: 0rem;
@@ -367,6 +405,18 @@ main {
 
     main {
         margin-top: 13rem;
+    }
+
+    .carousel-container {
+        position: absolute;
+        margin-top: 17rem;
+        left: 50%!important;
+        transform: translate(-50%,-50%)!important;
+        width: 80%;
+    }
+
+    .package-container {
+        margin-top: 96rem;
     }
 
     .container {
@@ -490,6 +540,10 @@ main {
         border-top: 1.5rem solid #B75CFF;
     }
 
+    .alert {
+        padding: 1rem 3rem 1rem 2rem;
+    }
+
 
 
 }
@@ -532,6 +586,14 @@ main {
 
     .small, small {
         font-size: 1.2em;
+    }
+
+    .carousel-container {
+        margin-top: 21rem;
+    }
+
+    .package-container {
+        margin-top: 110rem;
     }
 
     .display-2 {

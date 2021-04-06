@@ -303,19 +303,20 @@ main {
 }
 
 .alert-dark {
-    color: black;
-    background-color: #FFE600;
+    background-color: black;
+    border-color: none
 }
 
 .alert {
     position: relative;
     padding: 1rem 3rem 1rem 2rem;
     margin-bottom: 0rem;
-    border: 1px solid transparent;
+    border-bottom: 1px solid white;
     border-radius: 0rem;
     margin-left: var(--bs-gutter-x,-0.8rem);
     margin-right: var(--bs-gutter-x,-0.8rem);
     text-align: left;
+    color: white;
 }
 
 .alert-dismissible .btn-close {
@@ -323,8 +324,13 @@ main {
     top: 0;
     right: 0;
     z-index: 2;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 1rem;
 }
+
+.btn-close {
+    opacity: 1;
+}
+
 
 
 
@@ -489,6 +495,18 @@ main {
 }
 
 
+@media (min-width: 500px) {
+    .alert-dismissible .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        margin-top: 1.5rem;
+    }
+
+}
+
+
 @media (min-width: 576px) {
     header {
         height: 620px;
@@ -628,8 +646,18 @@ main {
         top: 0;
         right: 0;
         z-index: 2;
-        padding: 0.2rem 0.5rem;
-        margin-top: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media (min-width: 870px) {
+    .alert-dismissible .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        margin-top: .7rem;
     }
 
 }

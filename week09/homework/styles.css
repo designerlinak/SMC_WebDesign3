@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    background-color: #fff;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.gnb {
+    background: linear-gradient(90deg, #DCE35B, #45B649);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+}
+
+.gnb a {
+    width: 80px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gnb a img {
+    width: 100%;
+    height: 110%;
+}
+
+#logo {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#logo:hover img {
+	-webkit-transform: translateY(11px) scale(1.5);
+	transform: translateY(11px) scale(1.5);
+}
+
+.gnb a span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.gnb a span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.gnb a span:nth-child(2) {
+    top: 100%;
+    left: 0;
+    color: #fff;
+}
+
+.gnb a:hover span:nth-child(1) {
+    top: -100%;
+}
+
+.gnb a:hover span:nth-child(2) {
+    top: 0;
+}
+
+main {
+    position: absolute;
+    height: 10%;
+    margin-top: 300px;
+    width: 90%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #DCE35B;
+}
+
+.box1, .box2, .box3, .box4 {
+    padding: 10px;
+}
+
+.gallery .box1:hover {
+    cursor: pointer;
+    transition: all 3s linear;
+    transform: rotateY(360deg);
+}
+
+.gallery .box2 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery .box2:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.gallery .box3 img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery .box3:hover img {
+	-webkit-transform: rotate(5deg) scale(1.1);
+	transform: rotate(5deg) scale(1.1);
+}
+
+.gallery .box4 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery .box4:hover img {
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
+}

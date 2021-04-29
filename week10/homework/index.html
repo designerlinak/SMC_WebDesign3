@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Animate the animatables</title>
+
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .loading {
+            z-index: 2;
+            position: fixed;
+        }
+
+        .loading span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border-radius: 50%;
+            animation: loading 1s linear 4 forwards;
+            margin: 5px;
+        }
+
+        .loading span:nth-child(1) {
+            animation-delay: 0s;
+            background-color: crimson;
+        }
+
+        .loading span:nth-child(2) {
+            animation-delay: 0.2s;
+            background-color: dodgerblue;
+        }
+
+        .loading span:nth-child(3) {
+            animation-delay: 0.4s;
+            background-color: royalblue;
+        }
+
+        .block {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            position: fixed;
+            background-color: #000;
+            animation: blockbg 1s 4s linear forwards;
+        }
+
+        .movewrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .movewrap {
+            max-width:2500px;
+            width: 100%;
+        }
+
+        .movewrap > div {
+            padding-bottom: 40%;
+            width: 100%;
+        }
+
+        .moving {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./img/bikebg.png') 0 center / 120% repeat-x;
+            animation: moveright 5s 4s linear infinite;
+        }
+
+        .bikeicon {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all 5s;
+            width: 20%;
+        }
+
+        .bikeicon img {
+            width: 100%;
+        }
+
+        .bikeicon .tire01 {
+            position: absolute;
+            bottom: 3%;
+            left: 10%;
+            width: 26%;
+            z-index: -1;
+        }
+
+        .bikeicon .tire02 {
+            position: absolute;
+            bottom: 3%;
+            right: .2%;
+            width: 26%;
+            z-index: -1;
+        }
+
+        .tire-rotate {
+            animation: tire-rotate 1s 4s linear infinite;
+        }
+
+
+        /* KEYFRAMES */
+        @keyframes loading {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5);
+                background-color: none;
+            }
+        }
+
+        @keyframes blockbg {
+            0% {background-color: #000;}
+            50% {background-color: rgba(0, 0, 0, 0.486);}
+            100% {background-color: rgba(0, 0, 0, 0);}
+        }
+
+        @keyframes moveright {
+            0% {background-position: 0% center;}
+            100% {background-position: 600% center;}
+        }
+
+        @keyframes tire-rotate {
+            0% {transform: rotate(0);}
+            100% {transform: rotate(360deg);}
+        }
+	</style>
+</head>
+
+<body>
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="block"></div>
+
+	<div class="movewrap">
+		<div>
+			<div class="moving">
+				<div class="bikeicon">
+					<img src="./img/bike.png">
+					<img src="./img/tire.png" class="tire01 tire-rotate">
+					<img src="./img/tire.png" class="tire02 tire-rotate">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

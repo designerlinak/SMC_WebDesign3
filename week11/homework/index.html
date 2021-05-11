@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Interactive Animation with HTML Canvas</title>
+
+    <style>
+        body {
+            margin: 0;
+            color: white;
+            background-color: black;
+        }
+
+        .img-box {
+            width: 1000px;
+            height: 900px;
+            margin: 0 auto;
+        }
+        
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            background: url(../homework/img/game-machine.png) no-repeat center;
+            margin: auto;
+        }
+
+        .canvas-container {
+            align-content: center;
+            display: grid;
+            justify-content: center;
+            min-height: 100%;
+            width: 100%;
+        }
+
+        canvas {
+            display: inline-block;
+            margin-left: 1px;
+            margin-top: 3px;
+        }
+
+        .control {
+            background-color: white;
+            width: 800px;
+            height: 50px;
+            float: right;
+            margin-right: 100px;
+            margin-top: -100px;
+            border-radius: 10px;
+        }
+
+        .color-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 0;
+            margin-top: 10px;
+            margin-right: 20px;
+            float: right;
+        }
+
+        .color-btn[data-color="mediumpurple"] { background: mediumpurple; }
+        .color-btn[data-color="paleturquoise"] { background: paleturquoise; }
+        .color-btn[data-color="palegreen"] { background: palegreen; }
+        .color-btn[data-color="lightsalmon"] { background: lightsalmon; }
+        .color-btn[data-color="lightpink"] { background-color: lightpink; }
+
+        #ball-color {
+            color: black;
+            width: 200px;
+            font-size: 15px;
+            font-family: 'Press Start 2P', cursive;
+            margin-top: 19px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-box">
+        <div class="bg-image">
+            <div class="canvas-container">
+                <canvas id="myGame" width="805" height="640">
+                    Please install a newer browser to play this game.
+                </canvas>
+            </div>
+            <div class="control">
+                <button class="color-btn" data-color="mediumpurple"></button>
+                <button class="color-btn" data-color="paleturquoise"></button>
+                <button class="color-btn" data-color="palegreen"></button>
+                <button class="color-btn" data-color="lightsalmon"></button>
+                <button class="color-btn" data-color="lightpink"></button>
+
+                <p id="ball-color">Ball colors:</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="canvasGame.js"></script>
+</body>
+</html>

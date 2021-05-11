@@ -82,8 +82,8 @@ canvas.addEventListener('click', function(event){
 
     if(distX < cRadius && distY < cRadius){
         console.log("HIT!");
-        cVelX = cVelX * 1.7;
-        cVelY = cVelY * 1.7;
+        cVelX = cVelX * 1.5;
+        cVelY = cVelY * 1.5;
         canvasColor.style.backgroundColor = randomColor;
         score++
     }

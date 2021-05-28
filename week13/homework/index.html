@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Experiment with 3D • A-Frame</title>
+        <meta name="description" content="Hello, WebVR! • A-Frame">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+    
+    <body>
+        <a-scene background="color: #1e3b70">
+        
+            <a-assets>
+                <a-asset-item id="killerwhale" src="https://poly.googleusercontent.com/downloads/c/fp/1619398499707141/7pqZEQ9b_E-/eGVHqEWNlJp/Mesh_Orca.gltf"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#killerwhale" position="0 1.5 -1.5" rotation="0 90 180" scale="-0.002 -0.002 -0.002"></a-entity>
+            
+            <a-assets>
+                <a-asset-item id="turtle" src="https://poly.googleusercontent.com/downloads/c/fp/1619223787850592/fklSEvGm1Q8/7VYlth4AA9W/NOVELO_TURTLE.gltf"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#turtle" position="1 2.5 -2" rotation="0 130 180" scale="-0.001 -0.001 -0.001"></a-entity>
+            
+            <a-assets>
+                <a-asset-item id="jellyfish" src="https://poly.googleusercontent.com/downloads/c/fp/1619398436299016/dA5osnS0Rzj/frjltisNn-T/NOVELO_JELLYFISH.gltf"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#jellyfish" position="-1 2.5 -2" rotation="230 0 -10" scale="-0.001 -0.001 -0.001"></a-entity>
+            
+            <a-assets>
+                <a-asset-item id="seahorse" src="https://poly.googleusercontent.com/downloads/c/fp/1619398821121719/fkK7TgvkSVG/enLyN7QY-0h/NOVELO_SEAHORSE.gltf"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#seahorse" position="1 0.5 -3" rotation="200 -70 0" scale="-0.001 -0.001 -0.001"></a-entity>
+
+            <a-entity light="type: ambient; color: #696969"></a-entity>
+        
+        </a-scene>
+    </body>
+</html>

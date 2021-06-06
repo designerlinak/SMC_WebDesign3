@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>123 Cosmetics | Ecommerce Website Design</title>
+        <!-- stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- light-slider-css -->
+        <link rel="stylesheet" type="text/css" href="../css/lightslider.css">
+        <!-- jQuery -->
+        <script src="../js/JQuery.js"></script>
+        <!-- light-slider-js -->
+        <script src="../js/lightslider.js"></script>
+        <!-- FontAwesome -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <!-- <link href="../draft/blog-draft.css" rel="stylesheet"> -->
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+    
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="web-container">
+                    <div class="navbar">
+                        <input type="checkbox" id="menuicon" onclick="menutoggle()">
+                        <label for="menuicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+
+                        <nav>
+                            <ul id="MenuItems">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../pages/products.html">PRODUCTS</a></li>
+                                <li><a href="../pages/checkout.html">CHECKOUT</a></li>
+                                <li><a href="../pages/contact.html">CONTACT</a></li>
+                                <li><a href="../pages/blog.html">BLOG</a></li>
+                            </ul>
+                        </nav>
+                        <div class="brand-logo">
+                            <a href="../index.html"><img src="../images/brand-icon.png" width="70px" alt="logo"></a>
+                        </div>
+                        <div class="nav-icon">
+                            <a href="#none" class="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </a>
+                            <a href="#none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" fill="black" class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                </svg>
+                            </a>
+                            <a href="#none" class="user">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg>
+                            </a>
+                            <a href="#none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </a>
+                            <a href="../pages/cart.html" class="cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                <span class="num-cart-product">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Search For Product"/>
+                <a href="#" class="search-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="black" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- login and sign up form -->
+        <div class="web-form">
+            <!-- login -->
+            <div class="login-form">
+                <a href="#" class="form-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <strong>Log In</strong>
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Log In">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="forget">Forget Your Password?</a>
+                    <a href="#" class="sign-up-btn">Create Account</a>
+                </div>
+            </div>
+
+            <!-- sign up -->
+            <div class="sign-up-form">
+                <a href="#" class="form-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <strong>Sign Up</strong>
+                <form>
+                    <input type="text" placeholder="Full Name" name="fullname" required>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="already-account">Already Have Account?</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- blog -->
+        <div class="checkout-heading">
+            <strong>Blog</strong>
+        </div>
+
+        <!-- <div class="blog-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading">
+                        <h2>Latest Blog</h2>
+                        <p>Recent blogs about personal care</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="../images/blog-1.jpeg" alt="">
+                    <div class="blog-inf">
+                        <h3>Title 1</h3>
+                        <span>20 January, 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nam, 
+                            dolorum deserunt velit illum ipsam incidunt distinctio non voluptatum 
+                            inventore architecto consequatur sit culpa iure voluptas minus ratione
+                             laudantium vero?
+                        </p>
+
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="../images/blog-1.jpeg" alt="">
+                    <div class="blog-inf">
+                        <h3>Title 2</h3>
+                        <span>20 January, 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nam, 
+                            dolorum deserunt velit illum ipsam incidunt distinctio non voluptatum 
+                            inventore architecto consequatur sit culpa iure voluptas minus ratione
+                             laudantium vero?
+                        </p>
+
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="../images/blog-1.jpeg" alt="">
+                    <div class="blog-inf">
+                        <h3>Title 3</h3>
+                        <span>20 January, 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nam, 
+                            dolorum deserunt velit illum ipsam incidunt distinctio non voluptatum 
+                            inventore architecto consequatur sit culpa iure voluptas minus ratione
+                             laudantium vero?
+                        </p>
+
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+        <!-- <main class="blog-container">
+            <div class="row mt-5 mb-5 g-5">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">World</strong>
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">Post title</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">World</strong>
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">Post title</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                        From the Firehose
+                    </h3>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">Sample blog post</h2>
+                        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                        <hr>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h2>Blockquotes</h2>
+                        <p>This is an example blockquote in action:</p>
+                        <blockquote class="blockquote">
+                            <p>Quoted text goes here.</p>
+                        </blockquote>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Example lists</h3>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>And this is an ordered list:</p>
+                        <ol>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ol>
+                        <p>And this is a definiton list:</p>
+                        <dl>
+                            <dt>HyperText Markup Language (HTML)</dt>
+                            <dd>The language used to describe and define the content of a Web page</dd>
+                            <dt>Cascading Style Sheets (CSS)</dt>
+                            <dd>Used to describe the appearance of Web content</dd>
+                            <dt>JavaScript (JS)</dt>
+                            <dd>The programming language used to build advanced Web sites and applications</dd>
+                        </dl>
+                        <h2>Inline HTML elements</h2>
+                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                        <ul>
+                            <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                            <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                            <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                            <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                            <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                        </ul>
+                        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                        <h2>Heading</h2>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Sub-heading</h3>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <pre><code>Example code block</code></pre>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">Another blog post</h2>
+                        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <blockquote>
+                            <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                        </blockquote>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Example table</h3>
+                        <p>And don't forget about tables in these posts:</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Upvotes</th>
+                                    <th>Downvotes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Bob</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Charlie</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Totals</td>
+                                    <td>21</td>
+                                    <td>23</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">New feature</h2>
+                        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <nav class="blog-pagination" aria-label="Pagination">
+                        <a class="btn btn-outline-primary" href="#">Older</a>
+                        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-light rounded">
+                            <h4 class="fst-italic">About</h4>
+                            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                        </div>
+
+                        <div class="p-4">
+                            <h4 class="fst-italic">Archives</h4>
+                            <ol class="list-unstyled mb-0">
+                                <li><a href="#">March 2021</a></li>
+                                <li><a href="#">February 2021</a></li>
+                                <li><a href="#">January 2021</a></li>
+                                <li><a href="#">December 2020</a></li>
+                                <li><a href="#">November 2020</a></li>
+                                <li><a href="#">October 2020</a></li>
+                                <li><a href="#">September 2020</a></li>
+                                <li><a href="#">August 2020</a></li>
+                                <li><a href="#">July 2020</a></li>
+                                <li><a href="#">June 2020</a></li>
+                                <li><a href="#">May 2020</a></li>
+                                <li><a href="#">April 2020</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="p-4">
+                            <h4 class="fst-italic">Elsewhere</h4>
+                            <ol class="list-unstyled">
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> -->
+
+        <main>
+            <!-- STORY -->
+            <div class="container s-container mb-5">
+              <div class="row pt-4 g-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <a href="#"><img src="../draft/../images/blog-1.jpeg" alt="birthday baby" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>Behind the Scenes of Natural Skincare with Urang's Jina Lee</h4>
+                  <p class="date">Apr 15, 2021</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <a href="#"><img src="../draft/../images/blog-2.jpeg" alt="winter hat" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>The Latest in Sustainable K-Beauty: Toun28</h4>
+                  <p class="date">Mar 03, 2021</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4">
+                  <a href="#"><img src="../draft/../images/blog-3.jpeg" alt="baby yoda" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>5 Reasons For WONDER Love</h4>
+                  <p class="date">Mar 18, 2021</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <a href="#"><img src="../draft/../images/blog-4.jpeg" alt="birthday baby" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>The 4 Foundations of Healthy Skin</h4>
+                  <p class="date">May 24, 2021</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <a href="#"><img src="../draft/../images/blog-5.jpeg" alt="winter hat" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>Beyond the Beauty: Julia</h4>
+                  <p class="date">Feb 17, 2021</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4">
+                  <a href="#"><img src="../draft/../images/blog-6.jpeg" alt="baby yoda" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>Beyond the Beauty: Sophia</h4>
+                  <p class="date">Mar 29, 2021</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4 hidden">
+                  <a href="#"><img src="../draft/../images/blog-7.jpeg" alt="birthday baby" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>Moisturizers, Explained</h4>
+                  <p class="date">Dec 20, 2020</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 mb-4 hidden">
+                  <a href="#"><img src="../draft/../images/blog-8.jpeg" alt="winter hat" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>Do I Really Need a Toner?</h4>
+                  <p class="date">Dec 06, 2020</p>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 hidden">
+                  <a href="#"><img src="../draft/../images/blog-9.jpeg" alt="baby yoda" width="100%"></a>
+                  <p>Blog</p>
+                  <h4>Complete Anti-Aging Routines for Every Budget</h4>
+                  <p class="date">Oct 06, 2020</p>
+                </div>
+        
+                <div class="col-12 mt-4 mb-5">
+                  <button class="lm-btn py-3 show">Load More</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- YOUTUBE -->
+            <div class="row">
+                <div class="col youtube-vid">
+                    <div class="ratio ratio-16x9 w-50 mx-auto">
+                        <iframe src="https://www.youtube.com/embed/53oS4X-LVOE" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="ratio ratio-16x9 w-50 mx-auto mt-5">
+                        <iframe src="https://www.youtube.com/embed/HtOn5j8Txsw" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="ratio ratio-16x9 w-50 mx-auto mt-5">
+                        <iframe src="https://www.youtube.com/embed/fNqb4PDKwlA" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <!-- <div class="ratio ratio-16x9 w-50 mx-auto mt-5">
+                        <iframe src="https://www.youtube.com/embed/zEeFU10cgUw" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div> -->
+                </div>
+            </div>
+        
+          </main>
+
+        
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="web-container">
+                    <div class="web-row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and iOS mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="../images/play-store.png" alt="">
+                                <img src="../images/app-store.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="footer-col-3">
+                            <h3>Discover</h3>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Our Origin</li>
+                                <li>Blog Post</li>
+                                <li>Store Location</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Customer Service</li>
+                                <li>Return Policy</li>
+                                <li>Shipping & Billing</li>
+                                <li>Terms of Use</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                                <li>YouTube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="subscribe">
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Example@gmail.com" required/>
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                    <p class="copyright">Copyright&copy; 2021 123 Cosmetics, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.3.0.min.js"
+        integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+
+        <script type="text/javascript">
+            // js for toggle menu
+            var MenuItems = document.getElementById('MenuItems');
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "100vh"
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px"
+                    }
+            }
+
+            // js for search bar
+            $(document).on('click','.search',function() {
+                $('.search-bar').addClass('search-bar-active')
+            });
+
+            $(document).on('click','.search-cancel',function() {
+                $('.search-bar').removeClass('search-bar-active')
+            });
+
+
+
+            // js for carousel
+            $(document).ready(function() {
+                $('#adaptive').lightSlider({
+                    adaptiveHeight:true,
+                    auto:true,
+                    item:1,
+                    slideMargin:0,
+                    loop:true
+                });
+            });
+
+            // js for featured categories
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth').removeClass('cS-hidden');
+                    } 
+                });  
+            });
+
+            // js for fix menu when scroll
+            $(window).scroll(function() {
+                if($(document).scrollTop() > 50) {
+                    $('.header').addClass('fix-nav');
+                }
+                else{
+                    $('.header').removeClass('fix-nav');
+                }
+            });
+
+            // js for login and sign up form
+            $(document).on('click','.user,.already-account',function() {
+                $('.web-form').addClass('login-active').removeClass('sign-up-active')
+            });
+
+            $(document).on('click','.sign-up-btn',function() {
+                $('.web-form').addClass('sign-up-active').removeClass('login-active')
+            });
+
+            $(document).on('click','.form-cancel',function() {
+                $('.web-form').removeClass('login-active').removeClass('sign-up-active')
+            });
+
+            // js for product gallery
+            var ProductImg = document.getElementById('ProductImg');
+            var SmallImg = document.getElementsByClassName('small-img');
+
+            SmallImg[0].onclick = function() {
+                ProductImg.src = SmallImg[0].src;
+            }
+
+            SmallImg[1].onclick = function() {
+                ProductImg.src = SmallImg[1].src;
+            }
+
+            SmallImg[2].onclick = function() {
+                ProductImg.src = SmallImg[2].src;
+            }
+
+            SmallImg[3].onclick = function() {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+            // js for update cart number
+            let carts = document.querySelectorAll('.add-cart');
+
+            let products = [
+                {
+                    name: 'Grey Tshirt',
+                    tag: 'greytshirt',
+                    price: 15,
+                    inCart: 0
+                },
+            ]
+
+            for (let i=0; i < carts.length; i++) {
+                carts[i].addEventListener('click', () => {
+                    cartNumbers();
+                })
+            }
+
+            function onLoadCartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                if(productNumbers) {
+                    document.querySelector('.cart span').textContent = productNumbers;
+                }
+            }
+
+
+            function cartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                productNumbers = parseInt(productNumbers);
+
+                if(productNumbers ) {
+                    localStorage.setItem('cartNumbers', productNumbers + 1);
+                    document.querySelector('.cart span').textContent = productNumbers + 1;
+                } else {
+                    localStorage.setItem('cartNumbers', 1);
+                    document.querySelector('.cart span').textContent = 1;
+                }  
+            }
+
+            // onLoadCartNumbers();
+
+        </script>
+
+        
+    </body>
+</html>

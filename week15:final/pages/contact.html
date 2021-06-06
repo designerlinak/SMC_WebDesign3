@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>123 Cosmetics | Ecommerce Website Design</title>
+        <!-- stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- light-slider-css -->
+        <link rel="stylesheet" type="text/css" href="../css/lightslider.css">
+        <!-- jQuery -->
+        <script src="../js/JQuery.js"></script>
+        <!-- light-slider-js -->
+        <script src="../js/lightslider.js"></script>
+        <!-- FontAwesome -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="web-container">
+                    <div class="navbar">
+                        <input type="checkbox" id="menuicon" onclick="menutoggle()">
+                        <label for="menuicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+
+                        <nav>
+                            <ul id="MenuItems">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../pages/products.html">PRODUCTS</a></li>
+                                <li><a href="../pages/checkout.html">CHECKOUT</a></li>
+                                <li><a href="../pages/contact.html">CONTACT</a></li>
+                                <li><a href="../pages/blog.html">BLOG</a></li>
+                            </ul>
+                        </nav>
+                        <div class="brand-logo">
+                            <a href="../index.html"><img src="../images/brand-icon.png" width="70px" alt="logo"></a>
+                        </div>
+                        <div class="nav-icon">
+                            <a href="#none" class="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </a>
+                            <a href="#none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" fill="black" class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                </svg>
+                            </a>
+                            <a href="#none" class="user">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg>
+                            </a>
+                            <a href="#none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </a>
+                            <a href="../pages/cart.html" class="cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                <span class="num-cart-product">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Search For Product"/>
+                <a href="#" class="search-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="black" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- login and sign up form -->
+        <div class="web-form">
+            <!-- login -->
+            <div class="login-form">
+                <a href="#" class="form-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <strong>Log In</strong>
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Log In">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="forget">Forget Your Password?</a>
+                    <a href="#" class="sign-up-btn">Create Account</a>
+                </div>
+            </div>
+
+            <!-- sign up -->
+            <div class="sign-up-form">
+                <a href="#" class="form-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <strong>Sign Up</strong>
+                <form>
+                    <input type="text" placeholder="Full Name" name="fullname" required>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="already-account">Already Have Account?</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- contact -->
+        <div class="checkout-heading">
+            <strong>Contact</strong>
+        </div>
+
+        <!-- GOOGLE MAP -->
+        <div class="map-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-5 mb-5 me-4 google-map">
+                        <div class="ratio ratio-4x3 w-100">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.
+                            897603298814!2d-118.36239053436957!3d34.07213907412802!2m3!1f0!2f0!3f0!3
+                            m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b931ad489011%3A0x45605b86ca56f5d!
+                            2sLa%20Brea%2C%20Los%20Angeles%2C%20CA%2090036%2C%20USA!5e0!3m2!1sen!2ss
+                            g!4v1622791801392!5m2!1sen!2ssg" width="600" height="450" style="border:0;" 
+                            allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col mt-5 mb-5 ms-4 contact-text">
+                        <div class="row">
+                            <div class="contact-part col-lg-10 col-md-9 col-sm-9 col-9 pt-3">
+                                <h3 class="contact-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="black" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    </svg>
+                                    Phone
+                                </h3>
+                                <p>+1 (310) 433-7561</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-part col-lg-10 col-md-9 col-sm-9 col-9 pt-3">
+                                <h3 class="contact-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="black" class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                    Email
+                                </h3>
+                                <p>123cosmetics@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-part col-lg-10 col-md-9 col-sm-9 col-9 pt-3">
+                                <h3 class="contact-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="black" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg>
+                                    Opening Hours
+                                </h3>
+                                <p>Monday - Friday: 10:00 AM - 10:00 PM<br>
+                                    Saturday - Sunday: 10:00 AM - 11:30 PM
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-part col-lg-10 col-md-9 col-sm-9 col-9 pt-3">
+                                <h3 class="contact-title">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg>
+                                    Location
+                                </h3>
+                                <p>189 The Grove Dr Suite J1A, Los Angeles, CA 90036</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-us">
+            <form action="" method="GET" name="checkout" autocomplete="on" class="needs-validation mb-5" novalidate>
+                <h1 class="title">Questions?</h1>
+                <div class="contact-container">
+                    <fieldset>
+                        <div class="contact-form row">
+                            <!-- name -->
+                            <div class="form-field col-lg-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="input-text" name="name" value="" oninput="alphaOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid name.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <!-- email -->
+                            <div class="form-field col-lg-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="input-text" name="email" oninput="emailOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid email.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your email.
+                                </div>
+                            </div>
+                            <!-- company name -->
+                            <div class="form-field col-lg-6">
+                                <label for="company" class="form-label">Company Name <span class="text-muted">(Optional)</span></label>
+                                <input type="text" id="company" class="input-text" name="company">
+                                
+                            </div>
+                            <!-- contact number -->
+                            <div class="form-field col-lg-6">
+                                <label for="phone" class="form-label">Contact Number</label>
+                                <input type="text" id="phone" class="input-text" name="phone" oninput="numbersOnly();" required>
+                                <div class="invalid-input">
+                                    Please enter a valid number.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your contact number.
+                                </div>
+                            </div>
+                            <!-- message -->
+                            <div class="form-field col-lg-12">
+                                <label for="message" class="form-label">Message</label>
+                                <input type="text" id="message" class="input-text" name="message" placeholder="Type something..." value="" required>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <!-- submit button -->
+                            <div class="form-field col-lg-12">
+                                <input type="submit" class="submit-btn" value="submit" name="">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="web-container">
+                    <div class="web-row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and iOS mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="../images/play-store.png" alt="">
+                                <img src="../images/app-store.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="footer-col-3">
+                            <h3>Discover</h3>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Our Origin</li>
+                                <li>Blog Post</li>
+                                <li>Store Location</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Customer Service</li>
+                                <li>Return Policy</li>
+                                <li>Shipping & Billing</li>
+                                <li>Terms of Use</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                                <li>YouTube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="subscribe">
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Example@gmail.com" required/>
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                    <p class="copyright">Copyright&copy; 2021 123 Cosmetics, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.3.0.min.js"
+        integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+
+        <!-- FORM VALIDATION JS -->
+        <script src="../js/contact-form-validation.js"></script>
+
+        <script type="text/javascript">
+            // js for toggle menu
+            var MenuItems = document.getElementById('MenuItems');
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "100vh"
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px"
+                    }
+            }
+
+            // js for search bar
+            $(document).on('click','.search',function() {
+                $('.search-bar').addClass('search-bar-active')
+            });
+
+            $(document).on('click','.search-cancel',function() {
+                $('.search-bar').removeClass('search-bar-active')
+            });
+
+
+
+            // js for carousel
+            $(document).ready(function() {
+                $('#adaptive').lightSlider({
+                    adaptiveHeight:true,
+                    auto:true,
+                    item:1,
+                    slideMargin:0,
+                    loop:true
+                });
+            });
+
+            // js for featured categories
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth').removeClass('cS-hidden');
+                    } 
+                });  
+            });
+
+            // js for fix menu when scroll
+            $(window).scroll(function() {
+                if($(document).scrollTop() > 50) {
+                    $('.header').addClass('fix-nav');
+                }
+                else{
+                    $('.header').removeClass('fix-nav');
+                }
+            });
+
+            // js for login and sign up form
+            $(document).on('click','.user,.already-account',function() {
+                $('.web-form').addClass('login-active').removeClass('sign-up-active')
+            });
+
+            $(document).on('click','.sign-up-btn',function() {
+                $('.web-form').addClass('sign-up-active').removeClass('login-active')
+            });
+
+            $(document).on('click','.form-cancel',function() {
+                $('.web-form').removeClass('login-active').removeClass('sign-up-active')
+            });
+
+            // js for product gallery
+            var ProductImg = document.getElementById('ProductImg');
+            var SmallImg = document.getElementsByClassName('small-img');
+
+            SmallImg[0].onclick = function() {
+                ProductImg.src = SmallImg[0].src;
+            }
+
+            SmallImg[1].onclick = function() {
+                ProductImg.src = SmallImg[1].src;
+            }
+
+            SmallImg[2].onclick = function() {
+                ProductImg.src = SmallImg[2].src;
+            }
+
+            SmallImg[3].onclick = function() {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+            // js for update cart number
+            let carts = document.querySelectorAll('.add-cart');
+
+            let products = [
+                {
+                    name: 'Grey Tshirt',
+                    tag: 'greytshirt',
+                    price: 15,
+                    inCart: 0
+                },
+            ]
+
+            for (let i=0; i < carts.length; i++) {
+                carts[i].addEventListener('click', () => {
+                    cartNumbers();
+                })
+            }
+
+            function onLoadCartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                if(productNumbers) {
+                    document.querySelector('.cart span').textContent = productNumbers;
+                }
+            }
+
+
+            function cartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                productNumbers = parseInt(productNumbers);
+
+                if(productNumbers ) {
+                    localStorage.setItem('cartNumbers', productNumbers + 1);
+                    document.querySelector('.cart span').textContent = productNumbers + 1;
+                } else {
+                    localStorage.setItem('cartNumbers', 1);
+                    document.querySelector('.cart span').textContent = 1;
+                }  
+            }
+
+            // onLoadCartNumbers();
+
+        </script>
+
+        
+    </body>
+</html>

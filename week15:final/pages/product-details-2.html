@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>123 Cosmetics | Ecommerce Website Design</title>
+        <!-- stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- light-slider-css -->
+        <link rel="stylesheet" type="text/css" href="../css/lightslider.css">
+        <!-- jQuery -->
+        <script src="../js/JQuery.js"></script>
+        <!-- light-slider-js -->
+        <script src="../js/lightslider.js"></script>
+        <!-- FontAwesome -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="web-container">
+                    <div class="navbar">
+                        <input type="checkbox" id="menuicon" onclick="menutoggle()">
+                        <label for="menuicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+
+                        <nav>
+                            <ul id="MenuItems">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../pages/products.html">PRODUCTS</a></li>
+                                <li><a href="../pages/checkout.html">CHECKOUT</a></li>
+                                <li><a href="../pages/contact.html">CONTACT</a></li>
+                                <li><a href="../pages/blog.html">BLOG</a></li>
+                            </ul>
+                        </nav>
+                        <div class="brand-logo">
+                            <a href="../index.html"><img src="../images/brand-icon.png" width="70px" alt="logo"></a>
+                        </div>
+                        <div class="nav-icon">
+                            <a href="#none" class="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </a>
+                            <a href="#none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" fill="black" class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                </svg>
+                            </a>
+                            <a href="#none" class="user">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg>
+                            </a>
+                            <a href="#none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </a>
+                            <a href="../pages/cart.html" class="cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                <span class="num-cart-product">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Search For Product"/>
+                <a href="#" class="search-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="black" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- login and sign up form -->
+        <div class="web-form">
+            <!-- login -->
+            <div class="login-form">
+                <a href="#" class="form-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <strong>Log In</strong>
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Log In">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="forget">Forget Your Password?</a>
+                    <a href="#" class="sign-up-btn">Create Account</a>
+                </div>
+            </div>
+
+            <!-- sign up -->
+            <div class="sign-up-form">
+                <a href="#" class="form-cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                <strong>Sign Up</strong>
+                <form>
+                    <input type="text" placeholder="Full Name" name="fullname" required>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <div class="form-btns">
+                    <a href="#" class="already-account">Already Have Account?</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- product details-2 -->
+        <section class="products">
+            <div class="products-heading">
+                <strong>All</strong>
+            </div>
+            <div class="lnb_tab tab3">
+                <ul> 
+                    <li class="on"><a href="#none">ALL</a></li>
+                    <li><a href="#none">NEW</a></li>
+                    <li><a href="#none">BEST 10</a></li>
+                    <li><a href="#none">SKINCARE</a></li>
+                    <li><a href="#none">BASE</a></li>
+                    <li><a href="#none">EYES</a></li>
+                    <li><a href="#none">LIPS</a></li>
+                    <li><a href="#none">CHEEK</a></li>
+                    <li><a href="#none">SHADING</a></li>
+                    <li><a href="#none">NAIL</a></li>
+                    <li><a href="#none">TOOLS</a></li>
+                    <li><a href="#none">SALE</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="pd-small-container single-product">
+            <div class="pd-row">
+                <div class="pd-col-2">
+                    <img src="../images/p-2.jpeg" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="../images/p-2.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="../images/p-2-1.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="../images/p-2-2.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="../images/p-2-3.jpeg" width="100%" class="small-img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pdtext-col-2">
+                    <div class="direction">
+                        <a href="../index.html"><p class="direction-1">HOME</p></a><img src="../images/arrow-1.gif" width="17px">
+                        <a href="../pages/products.html"><p class="direction-2">PRODUCTS</p></a><img src="../images/arrow-1.gif" width="17px">
+                        <p class="direction-3">ALL</p>
+                    </div>
+
+                    <p class="brand-name">WAKEMAKE</p>
+                    <h1>Powder Jet Dual Brow</h1>
+                    <h4>$12.00</h4>
+                    <select>
+                        <option>Select Options</option>
+                        <option>01 Blond</option>
+                        <option>02 Ash Gray</option>
+                        <option>03 Chestnut Brown</option>
+                        <option>04 Reddish Brown</option>
+                        <option>05 Dark Brown</option>
+                    </select>
+
+                    <input type="number" value="1">
+                    <a href="#none" id="pd-btn-1">Buy Now</a>
+                    <a href="../pages/cart.html" class="add-cart cart1" id="pd-btn-2">Add To Cart</a>
+                    <a href="#none" class="favorites">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                    </a>
+        
+                    <h3>Product Details</h3>
+                    <br>
+                    <p class="product-description">3-in-1 brow combining pencil, powder, and brush that has the delicacy of a pencil and the natural expression of powder.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- title -->
+        <div class="small-container">
+            <div class="rp-row row-2">
+                <h2 class="rp-title">Related Products</h2>
+                <a href="../pages/products.html" class="rp-view">View More</a>
+            </div>
+        </div>
+
+        <!-- related products -->
+        <div class="rp-container">
+            <div class="rp-box">
+                <div class="product-img">
+                    <img src="../images/p-4.jpeg" alt="">
+                </div>
+                <div class="product-details">
+                    <a href="#none" class="p-name"><b>Too Cool For School</b><br>Art Class Salon De Eyes</a>
+                    <span class="p-price">$45.00</span>
+                </div>
+            </div>
+            <div class="rp-box">
+                <div class="product-img">
+                    <img src="../images/p-11.jpeg" alt="">
+                </div>
+                <div class="product-details">
+                    <a href="#none" class="p-name"><b>URBAN DECAY</b><br>Naked3 Palette</a>
+                    <span class="p-price">$75.00</span>
+                </div>
+            </div>
+            <div class="rp-box">
+                <div class="product-img">
+                    <img src="../images/p-7.jpeg" alt="">
+                </div>
+                <div class="product-details">
+                    <a href="#none" class="p-name"><b>ETUDE</b><br>Play Color Eyes</a>
+                    <span class="p-price">$16.00</span>
+                </div>
+            </div>
+            <div class="rp-box">
+                <div class="product-img">
+                    <img src="../images/p-6.jpeg" alt="">
+                </div>
+                <div class="product-details">
+                    <a href="#none" class="p-name"><b>URBAN DECAY</b><br>Naked Petite Heat</a>
+                    <span class="p-price">$75.00</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="web-container">
+                    <div class="web-row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and iOS mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="../images/play-store.png" alt="">
+                                <img src="../images/app-store.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- <div class="footer-col-2">
+                            <img src="../images/" alt="">
+                
+                        </div> -->
+                        <div class="footer-col-3">
+                            <h3>Discover</h3>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Our Origin</li>
+                                <li>Blog Post</li>
+                                <li>Store Location</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Customer Service</li>
+                                <li>Return Policy</li>
+                                <li>Shipping & Billing</li>
+                                <li>Terms of Use</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                                <li>YouTube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="subscribe">
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Example@gmail.com" required/>
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                    <p class="copyright">Copyright&copy; 2021 123 Cosmetics, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+
+        <!-- script -->
+        <script type="text/javascript">
+            // js for toggle menu
+            var MenuItems = document.getElementById('MenuItems');
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "100vh"
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px"
+                    }
+            }
+
+            // js for search bar
+            $(document).on('click','.search',function() {
+                $('.search-bar').addClass('search-bar-active')
+            });
+
+            $(document).on('click','.search-cancel',function() {
+                $('.search-bar').removeClass('search-bar-active')
+            });
+
+
+
+            // js for carousel
+            $(document).ready(function() {
+                $('#adaptive').lightSlider({
+                    adaptiveHeight:true,
+                    auto:true,
+                    item:1,
+                    slideMargin:0,
+                    loop:true
+                });
+            });
+
+            // js for featured categories
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth').removeClass('cS-hidden');
+                    } 
+                });  
+            });
+
+            // js for fix menu when scroll
+            $(window).scroll(function() {
+                if($(document).scrollTop() > 50) {
+                    $('.header').addClass('fix-nav');
+                }
+                else{
+                    $('.header').removeClass('fix-nav');
+                }
+            });
+
+            // js for login and sign up form
+            $(document).on('click','.user,.already-account',function() {
+                $('.web-form').addClass('login-active').removeClass('sign-up-active')
+            });
+
+            $(document).on('click','.sign-up-btn',function() {
+                $('.web-form').addClass('sign-up-active').removeClass('login-active')
+            });
+
+            $(document).on('click','.form-cancel',function() {
+                $('.web-form').removeClass('login-active').removeClass('sign-up-active')
+            });
+
+            // js for product gallery
+            var ProductImg = document.getElementById('ProductImg');
+            var SmallImg = document.getElementsByClassName('small-img');
+
+            SmallImg[0].onclick = function() {
+                ProductImg.src = SmallImg[0].src;
+            }
+
+            SmallImg[1].onclick = function() {
+                ProductImg.src = SmallImg[1].src;
+            }
+
+            SmallImg[2].onclick = function() {
+                ProductImg.src = SmallImg[2].src;
+            }
+
+            SmallImg[3].onclick = function() {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+            // js for update cart number
+            let carts = document.querySelectorAll('.add-cart');
+
+            let products = [
+                {
+                    name: 'Grey Tshirt',
+                    tag: 'greytshirt',
+                    price: 15,
+                    inCart: 0
+                },
+            ]
+
+            for (let i=0; i < carts.length; i++) {
+                carts[i].addEventListener('click', () => {
+                    cartNumbers();
+                })
+            }
+
+            function onLoadCartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                if(productNumbers) {
+                    document.querySelector('.cart span').textContent = productNumbers;
+                }
+            }
+
+
+            function cartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                productNumbers = parseInt(productNumbers);
+
+                if(productNumbers ) {
+                    localStorage.setItem('cartNumbers', productNumbers + 1);
+                    document.querySelector('.cart span').textContent = productNumbers + 1;
+                } else {
+                    localStorage.setItem('cartNumbers', 1);
+                    document.querySelector('.cart span').textContent = 1;
+                }  
+            }
+
+            // onLoadCartNumbers();
+
+        </script>
+
+    </body>
+</html>

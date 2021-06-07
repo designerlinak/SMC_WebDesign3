@@ -1,4 +1,4 @@
-/*TOGGLE BILLING VISIBILITY*/
+// TOGGLE BILLING VISIBILITY
 function toggleBilling() {
     if (document.getElementById('customSwitches').checked == true) {
         document.getElementById('billingGroup').style.display = "none";
@@ -9,10 +9,12 @@ function toggleBilling() {
     }
 }
 
-/*CHECK VALID INPUT*/
+
+// CHECK VALID INPUT
 var errorInput = document.getElementsByClassName('invalid-input');
 
-/*message if user inputs numbers instead of letters*/
+
+// when user inputs numbers instead of letters
 function alphaOnly() {
     var fname = document.getElementById('txtfname');
     var lname = document.getElementById('txtlname');
@@ -52,7 +54,8 @@ function alphaOnly() {
     }
 }
 
-/*message if user inputs letters instead of numbers*/
+
+// when user inputs letters instead of numbers
 function numbersOnly() {
     var zip = document.getElementById('txtzip');
     var Bzip = document.getElementById('txtzip_billing');

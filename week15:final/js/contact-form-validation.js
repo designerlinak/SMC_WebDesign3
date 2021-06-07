@@ -1,7 +1,8 @@
-/*CHECK VALID INPUT*/
-var errorInput = document.getElementsByClassName('invalid-input');
+// CHECK VALID INPUT
+var errorInput = document.getElementsByClassName('invalid-input'); 
 
-/*message if user inputs numbers instead of letters*/
+
+// when user inputs numbers instead of letters
 function alphaOnly() {
     var name = document.getElementById('name');
 
@@ -13,7 +14,8 @@ function alphaOnly() {
     }
 }
 
-/*checks for @ format*/
+
+// checks for @ format
 function emailOnly() {
     var email = document.getElementById('email');
 
@@ -25,7 +27,8 @@ function emailOnly() {
     }
 }
 
-/*message if user inputs letters instead of numbers*/
+
+// when user inputs letters instead of numbers
 function numbersOnly() {
     var phone = document.getElementById('phone');
     

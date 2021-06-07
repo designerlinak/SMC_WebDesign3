@@ -1619,6 +1619,7 @@ th:last-child {
     width: 63.666667% !important;
     padding-left: 30px !important;
     padding-right: 100px !important;
+    display: flex;
 }
 
 .form-check-input:checked {
@@ -1674,6 +1675,13 @@ th:last-child {
 .order-summary .ps-5 {
     padding-left: 3rem !important;
 }
+
+.question-icon {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+
 
 
 

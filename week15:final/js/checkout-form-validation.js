@@ -86,3 +86,25 @@ function numbersOnly() {
         });
     }, false);
 })();
+
+
+// disabled button state
+
+// (function() {
+//     $('form > div > input').keyup(function() {
+//         var empty = false;
+//         $('form > div > input').each(function() {
+//             if ($(this).val() =='') {
+//                 empty = true;
+//             }
+        
+//     });
+
+//     if (empty) {
+//         $('#order').attr ('disabled', 'disabled');
+//     }
+//     else {
+//         $('#order').removeAttr ('disabled');
+//     }
+// });
+// })()

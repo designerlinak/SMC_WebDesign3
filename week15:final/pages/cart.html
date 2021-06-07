@@ -25,13 +25,14 @@
             <div class="header">
                 <div class="web-container">
                     <div class="navbar">
+                        <!-- HAMBURGER MENU ICON -->
                         <input type="checkbox" id="menuicon" onclick="menutoggle()">
                         <label for="menuicon">
                             <span></span>
                             <span></span>
                             <span></span>
                         </label>
-                        
+                        <!-- NAVBAR MENU -->
                         <nav>
                             <ul id="MenuItems" class="gnb">
                                 <li><a href="../index.html">HOME</a></li>
@@ -41,9 +42,11 @@
                                 <li><a href="../pages/blog.html">BLOG</a></li>
                             </ul>
                         </nav>
+                        <!-- NAVBAR LOGO -->
                         <div class="brand-logo">
                             <a href="../index.html"><img src="../images/brand-icon.png" width="70px" alt="logo"></a>
                         </div>
+                        <!-- NAVBAR ICON -->
                         <div class="nav-icon">
                             <a href="#none" class="search">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="black" class="bi bi-search" viewBox="0 0 16 16">
@@ -69,7 +72,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                                 </svg>
-                                <span class="num-cart-product">3</span>
+                                <span class="num-cart-product">0</span>
                             </a>
                         </div>
                     </div>
@@ -77,151 +80,156 @@
             </div>
         </header>
 
-
-        <!-- search bar -->
-        <div class="search-bar">
-            <div class="search-input">
-                <input type="text" placeholder="Search For Product"/>
-                <a href="#" class="search-cancel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="black" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- login and sign up form -->
-        <div class="web-form">
-            <!-- login -->
-            <div class="login-form">
-                <a href="#" class="form-cancel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                </a>
-                <strong>Log In</strong>
-                <form>
-                    <input type="email" placeholder="Example@gmail.com" name="email" required>
-                    <input type="password" placeholder="Password" name="password" required>
-                    <input type="submit" value="Log In">
-                </form>
-                <div class="form-btns">
-                    <a href="#" class="forget">Forget Your Password?</a>
-                    <a href="#" class="sign-up-btn">Create Account</a>
+        <main>
+            <!-- SEARCH BAR -->
+            <div class="search-bar">
+                <div class="search-input">
+                    <input type="text" placeholder="Search For Product"/>
+                    <a href="#" class="search-cancel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="black" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <!-- sign up -->
-            <div class="sign-up-form">
-                <a href="#" class="form-cancel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                </a>
-                <strong>Sign Up</strong>
-                <form>
-                    <input type="text" placeholder="Full Name" name="fullname" required>
-                    <input type="email" placeholder="Example@gmail.com" name="email" required>
-                    <input type="password" placeholder="Password" name="password" required>
-                    <input type="submit" value="Sign Up">
-                </form>
-                <div class="form-btns">
-                    <a href="#" class="already-account">Already Have Account?</a>
+            <!-- LOGIN & SIGN UP FORM -->
+            <div class="web-form">
+                <!-- login -->
+                <div class="login-form">
+                    <a href="#" class="form-cancel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <strong>Log In</strong>
+                    <form>
+                        <input type="email" placeholder="Example@gmail.com" name="email" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <input type="submit" value="Log In">
+                    </form>
+                    <div class="form-btns">
+                        <a href="#" class="forget">Forget Your Password?</a>
+                        <a href="#" class="sign-up-btn">Create Account</a>
+                    </div>
+                </div>
+                <!-- sign up -->
+                <div class="sign-up-form">
+                    <a href="#" class="form-cancel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <strong>Sign Up</strong>
+                    <form>
+                        <input type="text" placeholder="Full Name" name="fullname" required>
+                        <input type="email" placeholder="Example@gmail.com" name="email" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <input type="submit" value="Sign Up">
+                    </form>
+                    <div class="form-btns">
+                        <a href="#" class="already-account">Already Have Account?</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- cart -->
-        <div class="products-heading">
-            <strong>Cart</strong>
-        </div>
+            <!-- CART -->
+            <div class="products-heading">
+                <strong>Cart</strong>
+            </div>
 
-        <!-- cart details -->
-        <div class="cart-container">
-            <div class="cart-page">
-                <table>
-                    <tr class="cart-title">
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="cart-info">
-                                <img src="../images/p-5.jpeg" alt="">
-                                <div>
-                                    <p>[CLIO] Pro Eye Palette Min</p>
-                                    <small>Price: $13.00</small>
-                                    <br>
-                                    <a href="#none">Remove</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td><input type="number" value="1"></td>
-                        <td>$13.00</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="cart-info">
-                                <img src="../images/p-2.jpeg" alt="">
-                                <div>
-                                    <p>[WAKEMAKE] Powder Jet Dual Brow</p>
-                                    <small>Price: $12.00</small>
-                                    <br>
-                                    <a href="#none">Remove</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td><input type="number" value="1"></td>
-                        <td>$12.00</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="cart-info">
-                                <img src="../images/p-14.jpeg" alt="">
-                                <div>
-                                    <p>[WAKEMAKE] Mood Styler</p>
-                                    <small>Price: $20.00</small>
-                                    <br>
-                                    <a href="#none">Remove</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td><input type="number" value="1"></td>
-                        <td>$20.00</td>
-                    </tr>
-                </table>
-
-                <div class="total-price">
+            <!-- CART DETAILS -->
+            <div class="cart-container">
+                <div class="cart-page">
+                    <!-- cart-list -->
                     <table>
-                        <tr>
-                            <td>Subtotal</td>
-                            <td>$45.00</td>
+                        <tr class="cart-title">
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
                         </tr>
+                        <!-- cart-item-1 -->
                         <tr>
-                            <td>Shipping & Handling</td>
-                            <td>TBD</td>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="../images/p-5.jpeg" alt="cart-item-1">
+                                    <div>
+                                        <p>[CLIO] Pro Eye Palette Min</p>
+                                        <small>Price: $13.00</small>
+                                        <br>
+                                        <a href="#none">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$13.00</td>
                         </tr>
+                        <!-- cart-item-2 -->
                         <tr>
-                            <td>Tax</td>
-                            <td>TBD</td>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="../images/p-2.jpeg" alt="cart-item-2">
+                                    <div>
+                                        <p>[WAKEMAKE] Powder Jet Dual Brow</p>
+                                        <small>Price: $12.00</small>
+                                        <br>
+                                        <a href="#none">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$12.00</td>
                         </tr>
+                        <!-- cart-item-3 -->
                         <tr>
-                            <td>Estimated Total</td>
-                            <td>$45.00</td>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="../images/p-14.jpeg" alt="cart-item-3">
+                                    <div>
+                                        <p>[WAKEMAKE] Mood Styler</p>
+                                        <small>Price: $20.00</small>
+                                        <br>
+                                        <a href="#none">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$20.00</td>
                         </tr>
                     </table>
-                </div>
-                <div class="cart-btn">
-                    <a href="../pages/products.html" id="continue-btn-1">Continue Shopping</a>
-                    <a href="../pages/checkout.html" id="checkout-btn-2">Checkout</a>
+
+                    <!-- price -->
+                    <div class="total-price">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>$45.00</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping & Handling</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>TBD</td>
+                            </tr>
+                            <tr>
+                                <td>Estimated Total</td>
+                                <td>$45.00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="cart-btn">
+                        <a href="../pages/products.html" id="continue-btn-1">Continue Shopping</a>
+                        <a href="../pages/checkout.html" id="checkout-btn-2">Checkout</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
 
-
-        <!-- footer -->
+        <!-- FOOTER -->
         <footer>
             <div class="footer">
                 <div class="web-container">
@@ -230,15 +238,10 @@
                             <h3>Download Our App</h3>
                             <p>Download App for Android and iOS mobile phone.</p>
                             <div class="app-logo">
-                                <img src="../images/play-store.png" alt="">
-                                <img src="../images/app-store.png" alt="">
+                                <img src="../images/play-store.png" alt="play-store">
+                                <img src="../images/app-store.png" alt="app-store">
                             </div>
                         </div>
-
-                        <!-- <div class="footer-col-2">
-                            <img src="../images/" alt="">
-                
-                        </div> -->
                         <div class="footer-col-3">
                             <h3>Discover</h3>
                             <ul>
@@ -268,6 +271,7 @@
                         </div>
                     </div>
                     <hr>
+                    <!-- subscribe -->
                     <div class="subscribe">
                         <form class="subscribe-form">
                             <input type="email" placeholder="Example@gmail.com" required/>
@@ -279,8 +283,7 @@
             </div>
         </footer>
         
-
-        <!-- script -->
+        <!-- SCRIPT -->
         <script type="text/javascript">
             // js for toggle menu
             var MenuItems = document.getElementById('MenuItems');
@@ -418,6 +421,5 @@
             // onLoadCartNumbers();
 
         </script>
-
     </body>
 </html>

@@ -124,6 +124,7 @@ p {
     padding-left: 100px !important;
     padding-right: 100px !important;
     max-width: none !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .web-row {
@@ -222,15 +223,15 @@ p {
     padding: 0px 20px;
 }
 
-.search-cancel {
+.search-bar .search-cancel {
     color: #272727;
     font-size: 2rem;
     padding-right: 40px;
 }
 
-.search-cancel:hover {
-    color: #0b9d8a;
-    transition: all ease 0.3s;
+.search-bar .search-cancel svg:hover {
+    fill: #7e81ff !important;
+    transition: all ease 0.3s !important;
 }
 
 .search-bar {
@@ -424,7 +425,7 @@ p {
 
 .login-form input[type="submit"],
 .sign-up-form input[type="submit"] {
-    background-color: #0b9d8a;
+    background-color: #7e81ff;
     color: #fff;
     border: none;
     outline: none;
@@ -432,6 +433,12 @@ p {
     margin-top: 10px;
     border-radius: 3px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover,
+.sign-up-form input[type="submit"]:hover {
+    background-color: rgb(116, 118, 235);
 }
 
 .form-btns {
@@ -460,7 +467,7 @@ p {
 }
 
 .form-cancel:hover {
-    color: #0b9d8a;
+    color: #7e81ff;
     transition: all ease 0.3s;
 }
 

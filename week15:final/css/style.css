@@ -60,6 +60,27 @@ nav ul {
     padding-left: 0 !important;
 }
 
+nav .gnb li a {
+    font-size: 13.5px !important;
+    position: relative;
+}
+
+nav .gnb li a::before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .gnb li a:hover::before {
+    width: 100%;
+}
+
 nav ul li {
     display: inline-block !important;
     margin-right: 20px !important;
@@ -2134,7 +2155,7 @@ p {
 
 
 /* media query for menu */
-@media only screen and (max-width: 1390px) {
+@media only screen and (max-width: 1420px) {
     .navbar nav ul {
         position: absolute !important;
         top: 103px !important;
@@ -2158,14 +2179,14 @@ p {
         color: #fff;
     } */
 
-    .navbar li a {
+    nav .gnb li a {
         color: #000 !important;
         font-size: 17px !important;
     }
 
-    .navbar li a:hover {
+    /* .navbar li a:hover {
         border-bottom: 2px solid #000 !important;
-    }
+    } */
 
     .navbar input[id="menuicon"] {
         display: none;

@@ -938,8 +938,21 @@ h4 {
     margin-top: 10px;
 }
 
+.footer-col-1 h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.17em !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+    margin-top: 10px;
+}
+
+.footer-col-3 li {
+
+}
+
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
-    min-width: 250px;
+    /* min-width: 250px; */
     margin-bottom: 20px;
 }
 
@@ -958,8 +971,10 @@ h4 {
 }
 
 .footer-col-3, .footer-col-4 {
-    flex-basis: 12%;
-    text-align: center;
+    /* flex-basis: 12%;
+    text-align: center; */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer-col-3 ul {
@@ -1008,7 +1023,7 @@ h4 {
     box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
     font-size: 0.85rem !important;
     line-height: 0 !important;
-
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .subscribe input[type="submit"] {

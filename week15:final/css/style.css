@@ -1520,7 +1520,7 @@ th:last-child {
     display: block;
     background: #000;
     color: #fff;
-    padding: 8px 10px;
+    padding: 9px 10px;
     margin: 0px 15px 5px 0px;
     border-radius: 5px;
     width: 180px;
@@ -2327,5 +2327,21 @@ th:last-child {
 
     .rp-title {
         font-size: 1.2rem;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
+    }
+
+    .map-container .ms-4 {
+        margin-left: 0rem !important;
+    }
+
+    .map-container .col-9 {
+        width: 100%;
+    }
+
+    .map-container .contact-text p {
+        font-size: 0.8rem;
     }
 }

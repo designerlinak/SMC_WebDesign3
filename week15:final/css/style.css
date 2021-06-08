@@ -1983,6 +1983,11 @@ th:last-child {
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .pd-container .small-container {
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+    }
 }
 
 
@@ -2033,8 +2038,12 @@ th:last-child {
 /* MEDIA QUERY 740PX */
 @media only screen and (max-width: 740px) {
     .web-container {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+    }
+
+    .navbar nav ul li {
+        margin-left: 70px !important;
     }
 
     .nav-icon {
@@ -2071,13 +2080,17 @@ th:last-child {
     .contact-us {
         max-width: 500px;
     }
+
+    .question-icon {
+        margin-top: 6px;
+    }
 }
 
 
 /* MEDIA QUERY 600PX */
 @media only screen and (max-width: 600px) {
     .web-row {
-        text-align: center;
+        text-align: left;
     }
 
     .col-2, .col-3, .col-4 {
@@ -2118,6 +2131,30 @@ th:last-child {
 
 /* MEDIA QUERY 568PX */
 @media only screen and (max-width: 568px) {
+    .slider-text-container, .banner-text-container {
+        width: 70%;
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .banner-text span {
+        font-size: 1rem;
+    }
+
+    .banner-text strong {
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+
+    .banner-btn {
+        margin-top: 20px;
+    }
+
     .btn-lg {
         width: 100% !important;
         height: 50px;
@@ -2158,23 +2195,49 @@ th:last-child {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    .col-12 .row {
+        --bs-gutter-x: 0rem;
+    }
 }
 
 
 /* MEDIA QUERY 450PX */
 @media only screen and (max-width: 450px) {
-    .slider-text-container, .banner-text-container {
+    .web-container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    .feature-heading h2 {
+        font-size: 1.25rem;
+    }
+
+    .navbar nav ul {
+        width: 300px;
+    }
+
+    .navbar nav ul li {
+        margin-left: 40px !important;
+    }
+
+    .slider-text-container {
         width: 65%;
         height: 90%;
         display: flex;
         align-items: center;
     }
 
+    .banner-text-container {
+        width: 85%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+    }
+
     .sale-text strong {
-        font-size: 1.2rem;
-        font-weight: 500;
-        width: 100%;
-        line-height: 23px;
+        font-size: 0.9rem;
+        line-height: 20px;
         margin-right: 120px;
     }
 
@@ -2186,9 +2249,17 @@ th:last-child {
         font-size: 1rem;
     }
 
-    .f-slider-text strong, .banner-text strong {
+    .f-slider-text strong {
         color: #333333;
-        font-size: 2rem;
+        font-size: 2.1rem;
+        line-height: 35px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+
+    .banner-text strong {
+        color: #333333;
+        font-size: 2.2rem;
         line-height: 35px;
         margin-top: 10px;
         letter-spacing: 1px;
@@ -2233,5 +2304,28 @@ th:last-child {
 
     .youtube-vid .w-50 {
         width: 80%!important;
+    }
+
+    .cart-container .cart-btn a {
+        font-size: 11px;
+    }
+
+    .checkout-form .col-sm-8 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .order-summary .col-sm-8 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .pd-container .small-container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .rp-title {
+        font-size: 1.2rem;
     }
 }

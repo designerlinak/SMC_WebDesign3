@@ -2164,7 +2164,7 @@ th:last-child {
 /* MEDIA QUERY 450PX */
 @media only screen and (max-width: 450px) {
     .slider-text-container, .banner-text-container {
-        width: 70%;
+        width: 65%;
         height: 90%;
         display: flex;
         align-items: center;
@@ -2176,6 +2176,36 @@ th:last-child {
         width: 100%;
         line-height: 23px;
         margin-right: 120px;
+    }
+
+    .f-slider-text span, .banner-text span {
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-weight: 500;
+        color: #666666;
+        font-size: 1rem;
+    }
+
+    .f-slider-text strong, .banner-text strong {
+        color: #333333;
+        font-size: 2rem;
+        line-height: 35px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+
+    .f-slider-btn, .banner-btn {
+        width: 130px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #7e81ff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 14px;
+        font-size: 0.7rem;
     }
 
     .container h5, .container h6 {

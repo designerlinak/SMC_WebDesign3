@@ -2032,6 +2032,11 @@ th:last-child {
 
 /* MEDIA QUERY 740PX */
 @media only screen and (max-width: 740px) {
+    .web-container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
     .nav-icon {
         opacity: 0;
     }

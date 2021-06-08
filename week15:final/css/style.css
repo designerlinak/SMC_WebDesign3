@@ -2163,6 +2163,21 @@ th:last-child {
 
 /* MEDIA QUERY 450PX */
 @media only screen and (max-width: 450px) {
+    .slider-text-container, .banner-text-container {
+        width: 70%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .sale-text strong {
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 100%;
+        line-height: 23px;
+        margin-right: 120px;
+    }
+
     .container h5, .container h6 {
         padding-left: 30px;
         margin-top: 5px;

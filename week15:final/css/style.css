@@ -543,12 +543,15 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 #autoWidth {
     display: flex;
     justify-content: center !important;
-    margin: 10px auto 40px auto;
+    margin: 10px auto 30px auto;
+    flex-wrap: wrap;
+    width: 95%;
 }
 
 

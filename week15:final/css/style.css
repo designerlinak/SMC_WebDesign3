@@ -2346,11 +2346,15 @@ th:last-child {
     }
 
     .testimonial .small-container {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .testimonial .col-3 {
         height: 355px;
+    }
+
+    .services-box {
+        width: 100%;
     }
 }
